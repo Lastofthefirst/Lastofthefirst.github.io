@@ -34,7 +34,8 @@
 
         .active {
             position: absolute;
-            bottom: 400px !important;
+            top: 0px !important;
+            transition-duration: 1s ease-in-out;
 
         }
 
@@ -58,23 +59,68 @@
             height: 100px;
             width: 95vw;
             position: absolute;
-            bottom: 307px;
+            bottom: 305px;
         }
+        .roof::before{
+            content: '';
+            height: 70px;
+            width: 95vw;
+            background: linear-gradient(rgba(219, 219, 219, 0.308), rgba(219, 219, 219, 0.062));
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+        .roof::after{
+            content: '';
+            height: 10px;
+            width: 95vw;
+            background: linear-gradient(rgba(143, 143, 143, 0.096), rgba(143, 143, 143, 0.308));
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+        }
+
 
         .walls {
             height: 200px;
             width: 95vw;
             position: absolute;
             bottom: 106px;
+            background-color: rgb(231, 231, 222);
             /*clip-path: polygon(0.67% 91.12%,99.21% 91.12%,99.33% 0.24%,0.29% 0.70%);
                 
             */
+        }
+        .walls::before{
+            content: '';
+            height: 10px;
+            width: 95vw;
+            background: linear-gradient(rgba(128, 128, 128, 0.438),rgba(128, 128, 128, 0.062));
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+        #frame{
+            position: absolute;
+            bottom: 5px;
+            left: 65px;
+            height: 100px;
+            width: 60px;
+            background-color: rgb(121, 67, 67);
+        }
+        #door{
+            position: absolute;
+            bottom: 5px;
+            left: 70px;
+            height: 90px;
+            width: 50px;
+            background-color: rgb(189, 189, 189);
         }
 
         .foundation {
             background-color: rgb(161, 161, 161);
             width: 95vw;
-            height: 75px;
+            height: 80px;
             position: absolute;
             bottom: 30px;
         }
@@ -118,7 +164,10 @@
             <div class="panel">
                 <p>Skills I have gained</p>
             </div>
-            <button class="accordion walls">Structure</button>
+            <button class="accordion walls">
+                <div id="frame"></div>
+                <div id="door"></div>
+                Structure</button>
 
             <div class="panel">
                 <p>Values and beliefs</p>
@@ -128,6 +177,7 @@
     </main>
 </body>
 <script>
+
     function open() {
         this.classList.toggle("active");
         let panel = this.previousElementSibling.style;
