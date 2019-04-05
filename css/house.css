@@ -1,0 +1,112 @@
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+}
+.active {
+    position: absolute;
+    bottom: 700px !important;
+    transition-duration: 1s;
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: rgb(148, 211, 185);
+}
+
+.roof {
+    /* clip-path: polygonpolygon(3.33px 161.47px,796.67px 162.47px,794.67px 41.53px,4.33px 42.53px);
+        */
+    background-color: rgb(131, 88, 88);
+    height: 20vh;
+    width: 95vw;
+    position: absolute;
+    bottom: 355px;
+}
+
+
+
+.walls {
+    height: 30vh;
+    width: 95vw;
+    position: absolute;
+    bottom: 156px;
+    background-color: rgb(231, 231, 222);
+    /*clip-path: polygon(0.67% 91.12%,99.21% 91.12%,99.33% 0.24%,0.29% 0.70%);
+        
+    */
+}
+
+
+
+.foundation {
+    background-color: rgb(161, 161, 161);
+    width: 95vw;
+    height: 15vh;
+    position: absolute;
+    bottom: 80px;
+}
+
+ /* -------------------------------------
+        ::BEFORE    SHADING    ::AFTER
+   -------------------------------------- */
+
+   .roof::before{
+    content: '';
+    height: 70px;
+    width: 95vw;
+    background: linear-gradient(rgba(219, 219, 219, 0.308), rgba(219, 219, 219, 0.062));
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.roof::after{
+    content: '';
+    height: 10px;
+    width: 95vw;
+    background: linear-gradient(rgba(143, 143, 143, 0.096), rgba(143, 143, 143, 0.308));
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+
+   .walls::before{
+    content: '';
+    height: 10px;
+    width: 95vw;
+    background: linear-gradient(rgba(128, 128, 128, 0.438),rgba(128, 128, 128, 0.062));
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+
+ /* -------------------------------------
+        DETAILS AND ORNAMENTAL ELEMENTS
+   -------------------------------------- */
+#frame{
+    position: absolute;
+    bottom: 5px;
+    left: 65px;
+    height: 100px;
+    width: 60px;
+    background-color: rgb(121, 67, 67);
+}
+#door{
+    position: absolute;
+    bottom: 5px;
+    left: 70px;
+    height: 90px;
+    width: 50px;
+    background-color: rgb(189, 189, 189);
+}
