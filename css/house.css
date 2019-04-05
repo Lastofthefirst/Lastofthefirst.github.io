@@ -50,7 +50,7 @@
 
 
 .foundation {
-    background-color: rgb(161, 161, 161);
+    background-color: rgb(209, 208, 208);
     width: 95vw;
     height: 80px;
     position: absolute;
@@ -90,7 +90,34 @@
     top: 0px;
     left: 0;
 }
+.walls::after{
+    content: '';
+    height: 150px;
+    width: 95vw;
+    background: linear-gradient(rgba(218, 218, 218, 0.116), rgba(219, 219, 219, 0.164));
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
 
+.foundation::before{
+    content: '';
+    height: 80px;
+    width: 95vw;
+    background: linear-gradient(rgba(116, 116, 116, 0.253),rgba(211, 211, 211, 0.062));
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.foundation::after{
+    content: '';
+    height: 20px;
+    width: 95vw;
+    background: linear-gradient(rgba(211, 211, 211, 0.062),rgba(88, 88, 88, 0.342));
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
 
  /* -------------------------------------
         DETAILS AND ORNAMENTAL ELEMENTS
@@ -99,7 +126,7 @@
     position: absolute;
     bottom: 0px;
     left: 65px;
-    height: 100px;
+    height: 150px;
     width: 60px;
     background-color: rgb(121, 67, 67);
 }
@@ -107,7 +134,53 @@
     position: absolute;
     bottom: 5px;
     left: 70px;
-    height: 90px;
+    height: 140px;
     width: 50px;
-    background: linear-gradient(rgb(128, 128, 128),rgb(190, 190, 190));
+    background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+}
+#porch{
+    position: absolute;
+    bottom: 0px;
+    left: 25px;
+    height: 190px;
+    width: 140px;
+    background: rgb(231, 231, 231);
+    clip-path: polygon(13.42% 98.83%,24.83% 98.58%,25.43% 17.19%,73.28% 16.81%,72.98% 98.37%,82.88% 98.50%,82.67% 16.75%,95.58% 16.67%,95.92% 9.09%,2.08% 9.42%,2.50% 17.09%,14.83% 17.09%);
+}
+#porch::before{
+    content: '';
+    height: 30px;
+    width: 135px;
+    background: linear-gradient(rgba(136, 136, 136, 0.281), rgba(97, 96, 96, 0.075));
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+#window1{
+    position: sticky;
+    bottom: 80px;
+    left: 265px;
+    height: 70px;
+    width: 70px;
+    background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+
+    border: solid, black, 8px;
+}
+#window1frame{
+    position: sticky;
+    bottom: 80px;
+    left: 265px;
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    clip-path: polygon(0% 53.12%,42.81% 52.43%,42.54% 100%,52.31% 100%,52.08% 52.75%,100% 52.57%,100% 42.35%,52.69% 42.37%,52.92% 0%,42.83% 0%,42.25% 42.44%,0% 42.65%);
+}
+#window1frame::before{
+    content: '';
+    height: 50px;
+    width: 135px;
+    background: linear-gradient(rgba(136, 136, 136, 0.185), rgba(97, 96, 96, 0.027));
+    position: absolute;
+    top: 0px;
+    left: 0;
 }
