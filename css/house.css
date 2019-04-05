@@ -14,7 +14,6 @@
     position: absolute;
     bottom: 600px !important;
     transition-duration: 1s;
-
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -31,6 +30,8 @@
     width: 95vw;
     position: absolute;
     bottom: 355px;
+    -webkit-text-size-adjust: 100%;
+
 }
 
 
@@ -96,7 +97,7 @@
    -------------------------------------- */
 #frame{
     position: absolute;
-    bottom: 5px;
+    bottom: 0px;
     left: 65px;
     height: 100px;
     width: 60px;
@@ -108,5 +109,5 @@
     left: 70px;
     height: 90px;
     width: 50px;
-    background-color: rgb(189, 189, 189);
+    background: linear-gradient(rgb(128, 128, 128),rgb(190, 190, 190));
 }

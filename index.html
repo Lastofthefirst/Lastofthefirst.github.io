@@ -40,18 +40,26 @@
         }
         #practical{
             position:absolute;
-            bottom: 450px;
+            bottom: 355px;
             background:white;
+            height: 100px;
+            width: 95vw;
+            display: flex;
+            justify-content: space-around;
         }
         #skills{
             position:absolute;
-            bottom: 200px;
+            bottom: 156px;
             background:white;
+            width: 95vw;
+            height: 200px;
         }
         #values{
             position:absolute;
             bottom: 100px;
             background:white;
+            width: 95vw;
+            height: 80px;
         }
     </style>
 
@@ -65,25 +73,32 @@
             </div>
             <div id="grass"></div>
             <div class="panel" id="practical">
-                <p>Two Apps I have Made</p>
+                <p>Here are two example mobile apps I have made:</p>
+                <div>AlgorithMachine</div>
+                <div>BookBox</div>
             </div>
             <button class="accordion roof">Practical</button>
             <div class="panel" id="skills">
-                <p>Skills I have gained</p>
+                <p>Current Tools: Javascript, Css and HTML Fluent, Read, study, understand, implement documentation, Long history of self study, Love Es6</p>
+                <p>I am Delving Deeper into: Data structures, functional programming, Microsoft Azure, Node.js, </p>
             </div>
             <button class="accordion walls">
                 <div id="frame"></div>
                 <div id="door"></div>
                 Structure</button>
 
-            <div class="panel" id="values">
-                <p>Values and beliefs</p>
+            <div class="panel" id="values" onclick="expand('values')">
+                <p>I believe that with a focus on the core language and reflection and understanding of the task, we can create the most effective solutions, quickly and efficiently with the least tradeoffs.</p>
             </div>
             <button class="accordion foundation">Foundation</button>
         </div>
     </main>
 </body>
 <script>
+    function expand(thisId){
+        let change = document.getElementById(thisId).style;
+        change.height = change.height === '500px' ? '100px' : '500px';
+    }
 
     function open() {
         this.classList.toggle("active");
