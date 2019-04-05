@@ -44,8 +44,6 @@
             background:white;
             height: 100px;
             width: 95vw;
-            display: flex;
-            justify-content: space-around;
         }
         #skills{
             position:absolute;
@@ -72,13 +70,19 @@
                 <h1 id="titleInfo">Quddus George</h1>
             </div>
             <div id="grass"></div>
-            <div class="panel" id="practical">
-                <p>Here are two example mobile apps I have made:</p>
-                <div>AlgorithMachine</div>
-                <div>BookBox</div>
+            <div class="panel" id="practical" onclick="expand('practical', '100px', '250px')">
+                <p style="display: flex; justify-content: center;">Here are two example mobile apps I have made:</p>
+                <div style="display:flex; justify-content:space-between;">
+                <div style="margin-left:35px;">AlgorithMachine</div>
+                <div style="margin-right:35px;">BookBox</div>
+            </div>
+            <div style="display:flex; justify-content:space-between;">
+                    <div style="margin-left:35px;"><img width="80px;" height="140px;" src="https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"></div>
+                    <div style="margin-right:35px;"><img width="80px;" height="140px;" src="https://images.unsplash.com/photo-1544793849-d282437dc3e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"></div>
+                </div>
             </div>
             <button class="accordion roof">Practical</button>
-            <div class="panel" id="skills">
+            <div class="panel" id="skills" onclick="expand('skills', '200px', '450px')">
                 <p>Current Tools: Javascript, Css and HTML Fluent, Read, study, understand, implement documentation, Long history of self study, Love Es6</p>
                 <p>I am Delving Deeper into: Data structures, functional programming, Microsoft Azure, Node.js, </p>
             </div>
@@ -87,7 +91,7 @@
                 <div id="door"></div>
                 Structure</button>
 
-            <div class="panel" id="values" onclick="expand('values')">
+            <div class="panel" id="values" onclick="expand('values', '100px', '500px')">
                 <p>I believe that with a focus on the core language and reflection and understanding of the task, we can create the most effective solutions, quickly and efficiently with the least tradeoffs.</p>
             </div>
             <button class="accordion foundation">Foundation</button>
@@ -95,9 +99,10 @@
     </main>
 </body>
 <script>
-    function expand(thisId){
+    function expand(thisId, thisHeight, thisNewHeight){
         let change = document.getElementById(thisId).style;
-        change.height = change.height === '500px' ? '100px' : '500px';
+        console.log(change);
+        change.height = change.height === thisNewHeight ? thisHeight : thisNewHeight;
     }
 
     function open() {
