@@ -10,14 +10,10 @@
     transition: 0.4s;
 
 }
-.active {
-    position: absolute;
-    bottom: 600px !important;
-    transition-duration: 1s;
-}
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
+
 .accordion:hover {
     background-color: rgb(225, 226, 196);
 }
@@ -57,6 +53,238 @@
     bottom: 80px;
 }
 
+.panel {
+    background-color: white;
+
+    overflow: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#roof {
+    background-color: rgb(97, 66, 66);
+    height: 100px;
+    width: 95vw;
+    position: absolute;
+    bottom: 355px;
+    z-index: 3;
+    text-align: right;
+}
+
+#walls {
+    height: 200px;
+    width: 95vw;
+    position: absolute;
+    bottom: 156px;
+    background-color: rgb(230, 194, 98);
+    z-index: 5;
+    text-align: right;
+
+}
+
+#foundation {
+    background-color: rgb(173, 164, 164);
+    width: 95vw;
+    height: 80px;
+    position: absolute;
+    bottom: 80px;
+    z-index: 7;
+    text-align: right;
+
+}
+
+#practical {
+    position: absolute;
+    bottom: 355px;
+    background: rgb(235, 232, 232);
+    height: 100px;
+    width: 95vw;
+    transition: 0.4s;
+    z-index: 2;
+}
+
+#skills {
+    position: absolute;
+    bottom: 156px;
+    background: rgb(240, 238, 230);
+    width: 95vw;
+    height: 200px;
+    transition: 0.4s;
+    z-index: 4;
+}
+
+#values {
+    position: absolute;
+    bottom: 80px;
+    background: rgb(223, 222, 222);
+    width: 95vw;
+    height: 80px;
+    transition: 0.4s;
+    z-index: 6;
+}
+
+#grass {
+    background-color: olivedrab;
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+
+#sky {
+    background-color: rgb(163, 204, 216);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+#sky::before {
+    content: '';
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(rgba(219, 219, 219, 0.295), rgba(219, 219, 219, 0.034));
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+#leaves {
+    height: 180px;
+    width: 300px;
+    position: absolute;
+    left: 200px;
+    bottom: 510px;
+    background-color: green;
+    border-radius: 75px;
+}
+
+
+
+#partleaves {
+    height: 70px;
+    width: 70px;
+    background-color: green;
+    position: absolute;
+    bottom: 480px;
+    left: 220px;
+    border-radius: 50px;
+}
+
+
+
+#branch {
+    height: 20px;
+    width: 100px;
+    background-color: rgb(77, 31, 31);
+    position: absolute;
+    bottom: 480px;
+    left: 240px;
+    border-radius: 25px;
+    -moz-transform: rotate(32deg);
+    -webkit-transform: rotate(32deg);
+    -o-transform: rotate(32deg);
+    -ms-transform: rotate(32deg);
+    transform: rotate(35deg);
+
+}
+
+#trunk {
+    height: 200px;
+    width: 90px;
+    position: absolute;
+    left: 305px;
+    bottom: 330px;
+    background-color: rgb(77, 31, 31);
+    border-radius: 15px;
+}
+
+#leaves2 {
+    height: 180px;
+    width: 330px;
+    position: absolute;
+    left: 550px;
+    bottom: 400px;
+    background-color: green;
+    border-radius: 75px;
+}
+
+
+
+#trunk2 {
+    height: 180px;
+    width: 90px;
+    position: absolute;
+    left: 670px;
+    bottom: 250px;
+    background-color: rgb(77, 31, 31);
+    border-radius: 15px;
+}
+
+#titleInfo {
+    position: fixed;
+    top: 10px;
+    left: 75px;
+}
+
+#email {
+    position: fixed;
+    top: 55px;
+    left: 90px;
+    font-size: 18px;
+}
+
+#github {
+    position: fixed;
+    top: 75px;
+    left: 90px;
+    font-size: 18px;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+button {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    letter-spacing: -0.4px;
+    word-spacing: 0px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    text-align: right;
+}
+
+.bot {
+    color: black;
+}
+
+p,
+li {
+    font-size: 2vh;
+}
+
+.cards {
+    background-color: white;
+    padding: 12px;
+    padding-top: 12px;
+    border-radius: 10px;
+    box-shadow: 10px, 10px, 5px, black;
+    margin: 5px;
+    margin-top: 20px;
+    min-width: 40vw;
+}
  /* -------------------------------------
         ::BEFORE    SHADING    ::AFTER
    -------------------------------------- */
@@ -111,7 +339,7 @@
 }
 .foundation::after{
     content: '';
-    height: 20px;
+    height: 40px;
     width: 95vw;
     background: linear-gradient(rgba(211, 211, 211, 0.062),rgba(88, 88, 88, 0.342));
     position: absolute;
@@ -119,6 +347,55 @@
     left: 0;
 }
 
+#grass::before {
+    content: '';
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(rgba(114, 114, 114, 0.253), rgba(236, 236, 236, 0.253));
+}
+
+#grass::after {
+    content: '';
+    height: 20px;
+    width: 95vw;
+    position: absolute;
+    bottom: 60px;
+    left: 8px;
+    background: linear-gradient(rgba(109, 88, 88, 0.397), rgba(70, 70, 70, 0.068));
+}
+#leaves::after {
+    content: '';
+    height: 180px;
+    width: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 75px;
+    background: linear-gradient(rgba(230, 230, 230, 0.459), rgba(70, 70, 70, 0.534));
+}
+
+#partleaves::after {
+    content: '';
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 50px;
+    background: linear-gradient(rgba(230, 230, 230, 0.062), rgba(70, 70, 70, 0.671));
+}
+#leaves2::after {
+    content: '';
+    height: 180px;
+    width: 330px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 75px;
+    background: linear-gradient(rgba(230, 230, 230, 0.459), rgba(70, 70, 70, 0.534));
+}
  /* -------------------------------------
         DETAILS AND ORNAMENTAL ELEMENTS
    -------------------------------------- */
@@ -184,4 +461,31 @@
     top: 30px;
     left: 240px;
     border-radius: 50px;
+}
+#windowVert{
+    position: absolute;
+    bottom: 80px;
+    left: 260px;
+    height: 70px;
+    width: 10px;
+    background-color: rgb(236, 236, 236);
+    border: solid, black, 8px;
+}
+#windowHor{
+    position: absolute;
+    bottom: 110px;
+    left: 230px;
+    height: 10px;
+    width: 70px;
+    background-color: rgb(236, 236, 236);
+    border: solid, black, 8px;
+}
+#doorknob{
+    position: absolute;
+    bottom: 60px;
+    left: 135px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
+    background-color: rgb(201, 201, 63);
 }

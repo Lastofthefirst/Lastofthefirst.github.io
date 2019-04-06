@@ -4,263 +4,16 @@
 <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
-    
+
     <link rel="stylesheet" href="css/house.css">
     <style>
         /* Style the buttons that are used to open and close the accordion panel */
-        
+
 
         /* Style the accordion panel. Note: hidden by default */
-        .panel {
-            background-color: white;
-
-            overflow: hidden;
-        }
-
-        body { 
-  overflow-x: hidden; 
-}
-#roof{
-    background-color: rgb(97, 66, 66);
-    height: 100px;
-    width: 95vw;
-    position: absolute;
-    bottom: 355px;
-    z-index: 3;
-    text-align: right;
-}
-#walls{
-    height: 200px;
-    width: 95vw;
-    position: absolute;
-    bottom: 156px;
-    background-color: rgb(230, 194, 98);
-    z-index: 5;
-    text-align: right;
-
-}
-#foundation {
-    background-color: rgb(173, 164, 164);
-    width: 95vw;
-    height: 80px;
-    position: absolute;
-    bottom: 80px;
-    z-index: 7;
-    text-align: right;
-
-}
-#practical{
-            position:absolute;
-            bottom: 355px;
-            background:rgb(235, 232, 232);
-            height: 100px;
-            width: 95vw;
-            transition: 0.4s;
-            z-index: 2;
-        }
-        #skills{
-            position:absolute;
-            bottom: 156px;
-            background:rgb(240, 238, 230);
-            width: 95vw;
-            height: 200px;
-            transition: 0.4s;
-            z-index: 4;
-        }
-        #values{
-            position:absolute;
-            bottom: 80px;
-            background:rgb(223, 222, 222);
-            width: 95vw;
-            height: 80px;
-            transition: 0.4s;
-            z-index: 6;
-        }
-        #grass {
-            background-color: olivedrab;
-            width: 100vw;
-            height: 300px;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-        }
-        #grass::before{
-            content: '';
-            height: 300px;
-            width: 100vw;
-            position:absolute;
-            bottom: 0px;
-            background: linear-gradient(rgba(114, 114, 114, 0.253),rgba(236, 236, 236, 0.253));
-        }
-        #grass::after{
-            content: '';
-            height: 20px;
-            width: 95vw;
-            position:absolute;
-            bottom: 60px;
-            left: 8px;
-            background: linear-gradient(rgba(109, 88, 88, 0.397),rgba(70, 70, 70, 0.068));
-        }
-
-        #sky {
-            background-color: rgb(163, 204, 216);
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            bottom: 140px;
-            left: 0px;
-        }
-        #sky::before{
-            content: '';
-            height: 250px;
-            width: 100vw;
-            background: linear-gradient(rgba(219, 219, 219, 0.295), rgba(219, 219, 219, 0.034));
-            position: absolute;
-            top: 0px;
-            left: 0;
-        }
-        #leaves{
-            height:180px;
-            width: 300px;
-            position:absolute;
-            left: 200px;
-            bottom: 360px;
-            background-color: green;
-            border-radius: 75px;
-        }
-        #leaves::after{
-            content: '';
-            height:180px;
-            width: 300px;
-            position:absolute;
-            bottom: 0px;
-            left: 0px;
-            border-radius: 75px;
-            background: linear-gradient(rgba(230, 230, 230, 0.459),rgba(70, 70, 70, 0.534));
-        }
-        #partleaves{
-            height: 70px;
-            width: 70px;
-            background-color:green;
-            position: absolute;
-            bottom: 330px;
-            left: 220px;
-            border-radius: 50px;
-        }
-        #partleaves::after{
-            content: '';
-            height: 70px;
-            width: 70px;
-            position:absolute;
-            bottom: 0px;
-            left: 0px;
-            border-radius: 50px;
-            background: linear-gradient(rgba(230, 230, 230, 0.062),rgba(70, 70, 70, 0.671));
-        }
-        #branch{
-            height: 20px;
-            width: 100px;
-            background-color:rgb(77, 31, 31);
-            position: absolute;
-            bottom: 330px;
-            left: 240px;
-            border-radius: 25px;
-            -moz-transform: rotate(32deg);
-            -webkit-transform: rotate(32deg);
-            -o-transform: rotate(32deg);
-            -ms-transform: rotate(32deg);
-            transform: rotate(35deg);
-
-        }
-        #trunk{
-            height:200px;
-            width: 90px;
-            position:absolute;
-            left: 305px;
-            bottom: 180px;
-            background-color: rgb(77, 31, 31);
-            border-radius: 15px;
-        }
-        #leaves2{
-            height:180px;
-            width: 330px;
-            position:absolute;
-            left: 550px;
-            bottom: 300px;
-            background-color: green;
-            border-radius: 75px;
-        }
-        #leaves2::after{
-            content: '';
-            height:180px;
-            width: 330px;
-            position:absolute;
-            bottom: 0px;
-            left: 0px;
-            border-radius: 75px;
-            background: linear-gradient(rgba(230, 230, 230, 0.459),rgba(70, 70, 70, 0.534));
-        }
-        #trunk2{
-            height:180px;
-            width: 90px;
-            position:absolute;
-            left: 670px;
-            bottom: 150px;
-            background-color: rgb(77, 31, 31);
-            border-radius: 15px;
-        }
-
-        #titleInfo {
-            position: fixed;
-            top: 10px;
-            left: 80px;
-        }
-        #email{
-            position:fixed;
-            top: 55px;
-            left: 90px;
-            font-size: 18px;
-        }
-        #github{
-            position:fixed;
-            top: 75px;
-            left: 90px;
-            font-size:18px;
-        }
-a:visited{
-        text-decoration: none;
-        color:blue;
-}
-button{
-    font-family: Georgia, serif;
-font-size: 22px;
-letter-spacing: -0.4px;
-word-spacing: 0px;
-color: black;
-font-weight: 700;
-text-decoration: none;
-font-style: normal;
-font-variant: small-caps;
-text-transform: none;
-text-align: right;
-}
-.bot{
-    color:black;
-}
-p, li{
-    font-size: 2vh;
-}
-.cards{
-    background-color:white;
-    padding: 12px;
-    padding-top: 12px;
-    border-radius: 10px;
-    box-shadow: 10px, 10px, 5px, black;
-    margin: 5px;
-    margin-top: 20px;
-}
+     
     </style>
-<title>Quddus George|Javascript Dev</title>
+    <title>Quddus George|Javascript Dev</title>
 </head>
 
 <body>
@@ -279,84 +32,113 @@ p, li{
                 <div id="cloud3"></div>
                 <div id="cloud4"></div>
                 <div>
-                        <h1 id="titleInfo">Quddus George</h1>
-                        <h2 id="email">Here is my <a href="Mailto:quddus19@gmail.com">Email</a></h2>
-                        <h2 id="github">Here is my <a href="https://github.com/Lastofthefirst">Github</a></h2>
-                    </div>
+                    <h1 id="titleInfo">Quddus George</h1>
+                    <h2 id="email">Here is my <a href="Mailto:quddus19@gmail.com">Email</a></h2>
+                    <h2 id="github">Here is my <a href="https://github.com/Lastofthefirst">Github</a></h2>
+                </div>
             </div>
             <div id="grass"></div>
             <div class="panel" id="practical" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
-                <h3 style="display: flex; justify-content: center;">Here are two example mobile apps I have made:</h3>
-            <div style="display:flex; justify-content:space-around;">
+                <h3 style="display: flex; justify-content: center; font-size: 3vh;">Here are two example mobile apps I have made:</h3>
+                <div style="display:flex; justify-content:space-around;">
 
-                    <div class="cards" style="display: flex; justify-content: space-around;"><a href="https://lastofthefirst.github.io/algorithmachine/" target="_blank"><img width="135px;" height="170px;" alt="Screenshot and link to AlgorithMachine App" src="AlgorithMachine.jpeg"></a><div style="margin-left: 5px;"><h4>AlgorithMachine</h4>
-                        <ul><li>Javascript</li><li>ES6</li><li>Functional Programming</li><li>Framework7</li></ul></div></div>
+                    <div class="cards" style="display: flex; justify-content: space-around;"><a href="https://lastofthefirst.github.io/algorithmachine/" target="_blank"><img width="115px;" height="170px;" alt="Screenshot and link to AlgorithMachine App" src="AlgorithMachine.jpeg"></a>
+                        <div style="margin-left: 5px;">
+                            <h4>AlgorithMachine</h4>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>ES6</li>
+                                <li>Functional Programming</li>
+                                <li>Framework7</li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="cards" style="display: flex; justify-content: space-between;">
-                        
-                        <a href="https://lastofthefirst.github.io/BookBox/" target="_blank"><img width="135px;" height="170px;" alt="Screenshot and link to BookBox App" src="bookbox.jpeg"></a><div style="margin-left: 5px;">
+
+                        <a href="https://lastofthefirst.github.io/BookBox/" target="_blank"><img width="115px;" height="170px;" alt="Screenshot and link to BookBox App" src="bookbox.jpeg"></a>
+                        <div style="margin-left: 5px;">
                             <h4>BookBox</h4>
-                        <ul><li>Javascript</li><li>Swiper Api</li><li>Functional Programming</li><li>Framework7</li></ul></div></div>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>Swiper Api</li>
+                                <li>Functional Programming</li>
+                                <li>Framework7</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button id="roof" class="accordion roof" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')"><h2 class="bot">Projects</h2></button>
+            <button id="roof" class="accordion roof" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
+                <h2 class="bot">Projects</h2>
+            </button>
             <div class="panel" id="skills" onclick="openHouse('skills', '100px', '256px', 'walls', '156px','400px')">
-                <div class="cards"><p>I am confident in my fluency in <b>Javascript, HTML, and CSS,</b> as well as my ability to <b>read and understand documentation</b> in order to <b>implement the corresponding code in my own projects</b>.</p><p>My experience has refined my ability to <b>communicate effectively</b> with team members. Throughout my life I have been delving into <b>new areas of learning, guiding my own studies</b>. I bring the skills gained to the table, with strong capability to <b>work independently, in collaboration with others, contributing toward a common objective</b>.</p>
-                <p>I'd like to Delve Deeper into: Data structures, functional programming, Microsoft Azure, Node.js </p></div>
+                <div class="cards">
+                    <p>I am confident in my fluency in <b>Javascript, HTML, and CSS,</b> as well as my ability to <b>read and understand documentation</b> in order to <b>implement the corresponding code in my own projects</b>.</p>
+                    <p>My experience has refined my ability to <b>communicate effectively</b> with team members. Throughout my life I have been delving into <b>new areas of learning, guiding my own studies</b>. I bring the skills gained to the table, with strong capability to <b>work independently, in collaboration with others, contributing toward a common objective</b>.</p>
+                    <p>I'd like to Delve Deeper into: Data structures, functional programming, Microsoft Azure, Node.js </p>
+                </div>
             </div>
             <button id="walls" class="accordion walls" onclick="openHouse('skills', '100px', '256px', 'walls', '156px','400px')">
                 <div id="frame"></div>
                 <div id="door"></div>
+                <div id="doorknob"></div>
                 <div id="porch"></div>
-                <div id="window1"></div><h2 class="bot">
-                Skills</h2></button>
+                <div id="window1"></div>
+                <div id="windowVert"></div>
+                <div id="windowHor"></div>
+                 <h2 style="position:absolute; bottom: 0px; right: 20px;" class="bot">
+                    Skills</h2>
+            </button>
 
-            <div class="panel" id="values" onclick="openHouse('values', '80px', '240px', 'foundation', '80px','320px')"><div class="cards">
-                <p>I would like to create applications that help people, working remotely, being payed well enough to work 24 hour weeks and support my family, and learn lots along the way, especially about core elements.</p>
-                <p>This requires <b>excellent</b>, <b>high quality</b> work, and a <b>deep understanding</b> of the user stories, as well as user experience, combined with a resourceful mind being applied to the problem with concerted effort. Continual learning is essential, to propel forward in progress, or to delve deeply into the nature of the tasks at hand. The numerous spaces that have been created throughout the web provide an abundance of knowledge, experience, and perspective to draw on, and must be <b>skillfully navigated</b> and utelized.</p>
-                <p>Working remotely leaves the team members responsible to communicate effectively, manage their own time judiciously, and focus intently on the task at hand. Learn, learn, learn, strive to overcome obstacles that arise in the development process.</p>
+            <div class="panel" id="values" onclick="openHouse('values', '80px', '240px', 'foundation', '80px','320px')">
+                <div class="cards">
+                    <p>I would like to create applications that help people, working remotely, being payed well enough to work 24 hour weeks and support my family, and learn lots along the way, especially about core elements.</p>
+                    <p>This requires <b>excellent</b>, <b>high quality</b> work, and a <b>deep understanding</b> of the user stories, as well as user experience, combined with a resourceful mind being applied to the problem with concerted effort. Continual learning is essential, to propel forward in progress, or to delve deeply into the nature of the tasks at hand. The numerous spaces that have been created throughout the web provide an abundance of knowledge, experience, and perspective to draw on, and must be <b>skillfully navigated</b> and utelized.</p>
+                    <p>Working remotely leaves the team members responsible to communicate effectively, manage their own time judiciously, and focus intently on the task at hand. Learn, learn, learn, strive to overcome obstacles that arise in the development process.</p>
+                </div>
             </div>
-            </div>
-            <button id="foundation" class="accordion foundation" onclick="openHouse('values', '80px', '240px', 'foundation', '80px','320px')"><h2 class="bot">Foundation</h2></button>
+            <button id="foundation" class="accordion foundation" onclick="openHouse('values', '80px', '240px', 'foundation', '80px','320px')">
+                <h2 class="bot">Foundation</h2>
+            </button>
         </div>
     </main>
 </body>
 <script>
-
-    function openHouse(infoId, heightIn, heightOut, houseId, bottomIn, bottomOut){
+    function openHouse(infoId, heightIn, heightOut, houseId, bottomIn, bottomOut) {
         let docHeight = document.documentElement.clientHeight;
         let docWidth = document.documentElement.clientWidth;
-        if (docHeight > docWidth){
-          let hC = Number(heightOut.replace('px', '')) + 200,
-              bC = Number(bottomOut.replace('px', '')) + 200;
-          heightOut = hC + 'px';
-          bottomOut = bC + 'px';
+        if (docHeight > docWidth) {
+            let hC = Number(heightOut.replace('px', '')) + 200,
+                bC = Number(bottomOut.replace('px', '')) + 200;
+            heightOut = hC + 'px';
+            bottomOut = bC + 'px';
         }
-    
+
         expand(infoId, heightIn, heightOut);
         open(houseId, bottomIn, bottomOut);
     }
-    
-  function expand(thisId, thisHeight, thisNewHeight){
+
+    function expand(thisId, thisHeight, thisNewHeight) {
         let change = document.getElementById(thisId).style;
 
         change.height = change.height === thisNewHeight ? thisHeight : thisNewHeight;
     }
-    function open(thisId, thisBottom, thisNewBottom){
+
+    function open(thisId, thisBottom, thisNewBottom) {
         let change = document.getElementById(thisId).style;
         console.log(change);
         change.bottom = change.bottom === thisNewBottom ? thisBottom : thisNewBottom;
     }
-/*
-    function open() {
-        this.classList.toggle("active");
-        let panel = this.previousElementSibling.style;
-        panel.display = panel.display === 'block' ? 'none' : 'block';
-    };
+    /*
+        function open() {
+            this.classList.toggle("active");
+            let panel = this.previousElementSibling.style;
+            panel.display = panel.display === 'block' ? 'none' : 'block';
+        };
 
-    const acc = document.querySelectorAll('.accordion');
-    [...acc].forEach(acc => acc.addEventListener('click', open));
-*/
-
+        const acc = document.querySelectorAll('.accordion');
+        [...acc].forEach(acc => acc.addEventListener('click', open));
+    */
 </script>
 
 </html>
