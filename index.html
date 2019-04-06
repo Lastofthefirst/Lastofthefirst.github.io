@@ -1,148 +1,95 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html class="no-js" lang="en">
 <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
-    <link rel="stylesheet" href="css/house.css">
-    <style>
-        /* Style the buttons that are used to open and close the accordion panel */
-        
-
-        /* Style the accordion panel. Note: hidden by default */
-        .panel {
-            background-color: white;
-            display: none;
-            overflow: hidden;
-        }
-
-        
-
-        #grass {
-            background-color: olivedrab;
-            width: 97vw;
-            height: 300px;
-            position: absolute;
-            bottom: 0px;
-        }
-
-        #sky {
-            background-color: lightblue;
-            width: 97vw;
-            height: 95vh;
-            position: absolute;
-            bottom: 140px;
-        }
-
-        #titleInfo {
-            position: fixed;
-            top: 10px;
-        }
-        #practical{
-            position:absolute;
-            bottom: 355px;
-            background:rgb(192, 178, 178);
-            height: 100px;
-            width: 95vw;
-        }
-        #skills{
-            position:absolute;
-            bottom: 156px;
-            background:rgb(221, 217, 196);
-            width: 95vw;
-            height: 200px;
-        }
-        #values{
-            position:absolute;
-            bottom: 100px;
-            background:white;
-            width: 95vw;
-            height: 80px;
-        }
-        svg {
-  height: 50%;
-  width: 50%;
-}
-path {
-  fill: white;
-  stroke: black;
-  stroke-width: 2;
-  stroke-linejoin: round;
-}
-path:hover {
-  fill: aliceblue;
-  stroke: lightskyblue;
-}
-#cloud{
-    position: sticky;
-    left: 200px;
-    top: 75px;
-}
-    </style>
-
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quddus George | Javascript Dev</title>
+<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 </head>
-
 <body>
-    <main>
-        <div class="house">
-            <div id="sky">
-                <h1 id="titleInfo">Quddus George</h1>
-                <svg id="cloud" viewBox='0 0 105 105' >
-                        <path d='M 25,60 
-                                 a 20,20 1 0,0 0,40 
-                                 h 50 
-                                 a 20,20 1 0,0 0,-40 
-                                 a 10,10 1 0,0 -15,-10 
-                                 a 15,15 1 0,0 -35,10  
-                                 z' />
-                      </svg>
-            </div>
-            <div id="grass"></div>
-            <div class="panel" id="practical" onclick="expand('practical', '100px', '250px')">
-                <p style="display: flex; justify-content: center;">Here are two example mobile apps I have made:</p>
-                <div style="display:flex; justify-content:space-between;">
-                <div style="margin-left:35px;">AlgorithMachine</div>
-                <div style="margin-right:35px;">BookBox</div>
-            </div>
-            <div style="display:flex; justify-content:space-between;">
-                    <div style="margin-left:35px;"><img width="100px;" height="140px;" src="AlgorithMachine.jpeg"></div>
-                    <div style="margin-right:35px;"><img width="100px;" height="140px;" src="bookbox.jpeg"></div>
-                </div>
-            </div>
-            <button class="accordion roof">Practical</button>
-            <div class="panel" id="skills" onclick="expand('skills', '200px', '450px')">
-                <p>Current Tools: Javascript, Css and HTML Fluent, Read, study, understand, implement documentation, Long history of self study, Love Es6</p>
-                <p>I am Delving Deeper into: Data structures, functional programming, Microsoft Azure, Node.js, </p>
-            </div>
-            <button class="accordion walls">
-                <div id="frame"></div>
-                <div id="door"></div>
-                <div id="porch"></div>
-                <div id="window1"><div id="window1frame"></div></div>
-                Structure</button>
 
-            <div class="panel" id="values" onclick="expand('values', '100px', '500px')">
-                <p>I believe that with a focus on the core language and reflection and understanding of the task, we can create the most effective solutions, quickly and efficiently with the least tradeoffs.</p>
-            </div>
-            <button class="accordion foundation">Foundation</button>
-        </div>
-    </main>
-</body>
+<div class="top-bar">
+<div class="top-bar-left">
+<ul class="menu">
+<li class="menu-text">Quddus George</li>
+<li><a href="#">Email</a></li>
+<li><a href="#">Github</a></li>
+</ul>
+</div>
+<div class="top-bar-right">
+<ul class="menu">
+<li><a href="#">AlgorithMachine</a></li>
+<li><a href="#">Bookbox</a></li>
+</ul>
+</div>
+</div>
+
+<div class="callout large">
+<div class="row column text-center">
+<h1>"Work done in the spirit of service is the highest form of worship..."</h1>
+<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
+<a href="#" class="button large">Email me</a>
+<a href="#" class="button large hollow">My github page</a>
+</div>
+</div>
+<div class="row">
+<div class="medium-6 columns medium-push-6">
+<img class="thumbnail" src="https://placehold.it/750x350">
+</div>
+<div class="medium-6 columns medium-pull-6">
+<h2>"For results depend upon means..."</h2>
+<p>I would like to create applications that help people, working remotely, being payed well enough to work 24 hour weeks and support my family, and learn lots along the way, especially about core elements.</p>
+</div>
+</div>
+<div class="row">
+<div class="medium-4 columns">
+<h3>Skills</h3>
+<p>I am confident in my fluency in Javascript, HTML, and CSS, as well as my ability to read and understand documentation in order to implement the corresponding code in my own projects.</p><p>My experience has refined my communication with team members. All my life I have been delving into new areas of learning, guiding my own studies. I bring</p>
+</div>
+<div class="medium-4 columns">
+<h3>Requirements</h3>
+<p>This requires excellent, high quality work, and a deep understanding of the user stories, as well as user experience, combined with a resourceful mind being applied to the problem with concerted effort. Continual learning is essential, to propel forward in progress, or to delve deeply into the nature of the tasks at hand. The numerous spaces that have been created throughout the web provide an abundance of knowledge, experience, and perspective to draw on, and must be skillfully navigated and utelized.</p>
+</div>
+<div class="medium-4 columns">
+<h3>Responsibilities</h3>
+<p>Working remotely leaves the team members responsible to communicate effectively, manage their own time judiciously, and focus intently on the task at hand. Learn, learn, learn, strive to overcome obstacles that arise in the development process.</p>
+</div>
+</div>
+<hr>
+<div class="row column">
+<ul class="vertical medium-horizontal menu expanded text-center">
+<li><a href="#"><div class="stat">2</div><span>Kids</span></a></li>
+<li><a href="#"><div class="stat">2</div><span>Apps</span></a></li>
+<li><a href="#"><div class="stat">ES6</div><span>Love It</span></a></li>
+<li><a href="#"><div class="stat">FCC</div><span>Certificate</span></a></li>
+<li><a href="#"><div class="stat">10</div><span>Books</span></a></li>
+</ul>
+</div>
+<hr>
+<div class="row column">
+<h3>Applications</h3>
+</div>
+<div class="row medium-up-3 large-up-4">
+<div class="column">
+<img class="thumbnail" src="AlgorithMachine.jpeg">
+</div>
+<div class="column">
+<img class="thumbnail" src="bookbox.jpeg">
+</div>
+</div>
+<hr>
+<div class="row column">
+<ul class="menu">
+<li><a href="#">Email</a></li>
+<li><a href="#">Github</a></li>
+<li><a href="#">Three</a></li>
+<li><a href="#">Four</a></li>
+</ul>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
 <script>
-    function expand(thisId, thisHeight, thisNewHeight){
-        let change = document.getElementById(thisId).style;
-        console.log(change);
-        change.height = change.height === thisNewHeight ? thisHeight : thisNewHeight;
-    }
-
-    function open() {
-        this.classList.toggle("active");
-        let panel = this.previousElementSibling.style;
-        panel.display = panel.display === 'block' ? 'none' : 'block';
-    };
-
-    const acc = document.querySelectorAll('.accordion');
-    [...acc].forEach(acc => acc.addEventListener('click', open));
-</script>
-
+      $(document).foundation();
+    </script>
+</body>
 </html>
