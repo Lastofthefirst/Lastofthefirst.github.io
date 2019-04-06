@@ -24,6 +24,7 @@
     position: absolute;
     bottom: 355px;
     z-index: 3;
+    text-align: right;
 }
 #walls{
     height: 200px;
@@ -32,6 +33,8 @@
     bottom: 156px;
     background-color: rgb(231, 231, 222);
     z-index: 5;
+    text-align: right;
+
 }
 #foundation {
     background-color: rgb(209, 208, 208);
@@ -40,6 +43,8 @@
     position: absolute;
     bottom: 80px;
     z-index: 7;
+    text-align: right;
+
 }
 #practical{
             position:absolute;
@@ -88,26 +93,21 @@
             position: fixed;
             top: 10px;
         }
-        
+        #email{
+            position:fixed;
+            top: 55px;
+            left: 30px;
+        }
+        #github{
+            position:fixed;
+            top: 80px;
+            left: 30px;
+        }
         svg {
   height: 50%;
   width: 50%;
 }
-path {
-  fill: white;
-  stroke: black;
-  stroke-width: 2;
-  stroke-linejoin: round;
-}
-path:hover {
-  fill: aliceblue;
-  stroke: lightskyblue;
-}
-#cloud{
-    position: sticky;
-    left: 200px;
-    top: 75px;
-}
+
     </style>
 
 </head>
@@ -117,15 +117,8 @@ path:hover {
         <div class="house">
             <div id="sky">
                 <h1 id="titleInfo">Quddus George</h1>
-                <svg id="cloud" viewBox='0 0 105 105' >
-                        <path d='M 25,60 
-                                 a 20,20 1 0,0 0,40 
-                                 h 50 
-                                 a 20,20 1 0,0 0,-40 
-                                 a 10,10 1 0,0 -15,-10 
-                                 a 15,15 1 0,0 -35,10  
-                                 z' />
-                      </svg>
+                <h2 id="email">Here is my Email</h2>
+                <h2 id="github">Here is my Github</h2>
             </div>
             <div id="grass"></div>
             <div class="panel" id="practical">

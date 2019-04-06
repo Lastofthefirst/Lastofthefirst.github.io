@@ -140,6 +140,7 @@
 }
 
 #window1{
+    -webkit-position: sticky;
     position: sticky;
     bottom: 80px;
     left: 265px;
