@@ -19,7 +19,7 @@
 
         
 #roof{
-    background-color: rgb(131, 88, 88);
+    background-color: rgb(104, 38, 38);
     height: 100px;
     width: 95vw;
     position: absolute;
@@ -32,13 +32,13 @@
     width: 95vw;
     position: absolute;
     bottom: 156px;
-    background-color: rgb(231, 231, 222);
+    background-color: rgb(230, 194, 98);
     z-index: 5;
     text-align: right;
 
 }
 #foundation {
-    background-color: rgb(209, 208, 208);
+    background-color: rgb(173, 164, 164);
     width: 95vw;
     height: 80px;
     position: absolute;
@@ -50,7 +50,7 @@
 #practical{
             position:absolute;
             bottom: 355px;
-            background:rgb(192, 178, 178);
+            background:rgb(235, 232, 232);
             height: 100px;
             width: 95vw;
             transition: 0.4s;
@@ -204,13 +204,22 @@ text-align: right;
 <script>
 
     function openHouse(infoId, heightIn, heightOut, houseId, bottomIn, bottomOut){
+        let docHeight = document.documentElement.clientHeight;
+        let docWidth = document.documentElement.clientWidth;
+        if (docHeight > docWidth){
+          let hC = Number(heightOut.replace('px', '')) + 200;
+          let bC = Number(bottomOut.replace('px', '')) + 200;
+          heightOut = hC + 'px';
+          bottomOut = bC + 'px';
+        }
+    
         expand(infoId, heightIn, heightOut);
         open(houseId, bottomIn, bottomOut);
     }
     
   function expand(thisId, thisHeight, thisNewHeight){
         let change = document.getElementById(thisId).style;
-        console.log(change);
+
         change.height = change.height === thisNewHeight ? thisHeight : thisNewHeight;
     }
     function open(thisId, thisBottom, thisNewBottom){
