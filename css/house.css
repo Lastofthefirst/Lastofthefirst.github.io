@@ -416,13 +416,68 @@ li {
     background-color: rgb(240, 238, 230);
 }
 
-#window1{
+#doorknob{
+    position: absolute;
+    bottom: 60px;
+    left: 135px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
+    background-color: rgb(201, 201, 63);
+}
+
+#frame2{
+    position: absolute;
+    bottom: 0px;
+    left: 565px;
+    height: 150px;
+    width: 90px;
+    background-color: rgb(121, 67, 67);
+}
+#door2{
+    position: absolute;
+    bottom: 5px;
+    left: 570px;
+    height: 140px;
+    width: 80px;
+    background-color: rgb(240, 238, 230);
+}
+
+#doorknob2{
+    position: absolute;
+    bottom: 60px;
+    left: 635px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50px;
+    background-color: rgb(201, 201, 63);
+}
+
+#window2{
     position: absolute;
     bottom: 80px;
-    left: 230px;
-    height: 70px;
-    width: 70px;
+    left: 730px;
+    height: 100px;
+    width: 100px;
     background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+    border: solid, black, 8px;
+}
+#windowVert2{
+    position: absolute;
+    bottom: 80px;
+    left: 775px;
+    height: 100px;
+    width: 10px;
+    background-color: rgb(236, 236, 236);
+    border: solid, black, 8px;
+}
+#windowHor2{
+    position: absolute;
+    bottom: 120px;
+    left: 730px;
+    height: 10px;
+    width: 100px;
+    background-color: rgb(236, 236, 236);
     border: solid, black, 8px;
 }
 
@@ -462,30 +517,87 @@ li {
     left: 240px;
     border-radius: 50px;
 }
+
+#window1{
+    position: absolute;
+    bottom: 80px;
+    left: 230px;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+    border: solid, black, 8px;
+}
 #windowVert{
     position: absolute;
     bottom: 80px;
-    left: 260px;
-    height: 70px;
+    left: 275px;
+    height: 100px;
     width: 10px;
     background-color: rgb(236, 236, 236);
     border: solid, black, 8px;
 }
 #windowHor{
     position: absolute;
-    bottom: 110px;
+    bottom: 120px;
     left: 230px;
     height: 10px;
-    width: 70px;
+    width: 100px;
     background-color: rgb(236, 236, 236);
     border: solid, black, 8px;
 }
-#doorknob{
+
+#head{
     position: absolute;
-    bottom: 60px;
-    left: 135px;
-    height: 8px;
-    width: 8px;
+    bottom: 90px;
+    left: 232px;
+    height: 25px;
+    width: 24px;
     border-radius: 50px;
-    background-color: rgb(201, 201, 63);
+    background-color: black;
+}
+#wave1{
+    position: absolute;
+    bottom: 77px;
+    left: 255px;
+    height: 30px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: black;
+    -moz-transform: rotate(250deg);
+    -webkit-transform: rotate(250deg);
+    -o-transform: rotate(250deg);
+    -ms-transform: rotate(250deg);
+    transform: rotate(250deg);
+}
+#wave2{
+    position: absolute;
+    bottom: 92px;
+    left: 265px;
+    height: 25px;
+    width: 10px;
+    border-radius: 50px;
+    background-color: black;
+    -moz-transform: rotate(175deg);
+-webkit-transform: rotate(175deg);
+-o-transform: rotate(175deg);
+-ms-transform: rotate(175deg);
+transform: rotate(175deg);
+}
+#body{
+    position: absolute;
+    bottom: 80px;
+    left: 235px;
+    height: 15px;
+    width: 20px;
+
+    background-color: black;
+}
+#shoulder{
+    position: absolute;
+    bottom: 80px;
+    left: 230px;
+    height: 15px;
+    width: 20px;
+    border-top-right-radius: 50px;
+    background-color: black;
 }
