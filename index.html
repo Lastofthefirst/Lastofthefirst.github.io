@@ -19,7 +19,7 @@
 
         
 #roof{
-    background-color: rgb(104, 38, 38);
+    background-color: rgb(97, 66, 66);
     height: 100px;
     width: 95vw;
     position: absolute;
@@ -129,10 +129,6 @@
             top: 80px;
             left: 30px;
         }
-        svg {
-  height: 50%;
-  width: 50%;
-}
 a:visited{
         text-decoration: none;
         color:blue;
@@ -152,6 +148,9 @@ text-align: right;
 }
 .bot{
     color:black;
+}
+p{
+    font-size: 2vmin;
 }
     </style>
 <title>Quddus George|Javascript Dev</title>
@@ -207,8 +206,8 @@ text-align: right;
         let docHeight = document.documentElement.clientHeight;
         let docWidth = document.documentElement.clientWidth;
         if (docHeight > docWidth){
-          let hC = Number(heightOut.replace('px', '')) + 200;
-          let bC = Number(bottomOut.replace('px', '')) + 200;
+          let hC = Number(heightOut.replace('px', '')) + 200,
+              bC = Number(bottomOut.replace('px', '')) + 200;
           heightOut = hC + 'px';
           bottomOut = bC + 'px';
         }
