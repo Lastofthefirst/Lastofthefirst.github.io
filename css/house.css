@@ -85,7 +85,7 @@
     content: '';
     height: 10px;
     width: 95vw;
-    background: linear-gradient(rgba(128, 128, 128, 0.438),rgba(128, 128, 128, 0.062));
+    background: linear-gradient(rgba(128, 128, 128, 0.438),rgba(128, 128, 128, 0.253));
     position: absolute;
     top: 0px;
     left: 0;
@@ -102,12 +102,12 @@
 
 .foundation::before{
     content: '';
-    height: 80px;
+    height: 40px;
     width: 95vw;
-    background: linear-gradient(rgba(116, 116, 116, 0.253),rgba(211, 211, 211, 0.062));
+    background: linear-gradient(rgba(116, 116, 116, 0.253),rgba(211, 211, 211, 0.322));
     position: absolute;
     top: 0px;
-    left: 0;
+    left: 0px;
 }
 .foundation::after{
     content: '';
@@ -140,10 +140,9 @@
 }
 
 #window1{
-    -webkit-position: sticky;
-    position: sticky;
+    position: absolute;
     bottom: 80px;
-    left: 265px;
+    left: 225px;
     height: 70px;
     width: 70px;
     background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
