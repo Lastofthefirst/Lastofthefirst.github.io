@@ -127,7 +127,7 @@
     bottom: 0px;
     left: 65px;
     height: 150px;
-    width: 60px;
+    width: 90px;
     background-color: rgb(121, 67, 67);
 }
 #door{
@@ -135,8 +135,8 @@
     bottom: 5px;
     left: 70px;
     height: 140px;
-    width: 50px;
-    background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+    width: 80px;
+    background-color: rgb(240, 238, 230);
 }
 
 #window1{
@@ -147,4 +147,41 @@
     width: 70px;
     background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
     border: solid, black, 8px;
+}
+
+#cloud{
+    background-color: white;
+    position: fixed;
+    height: 60px;
+    width: 350px;
+    top: 50px;
+    left: 20px;
+    border-radius: 25px;
+}
+#cloud2{
+    background-color: white;
+    position: fixed;
+    height: 80px;
+    width: 160px;
+    top: 10px;
+    left: 120px;
+    border-radius: 45px;
+}
+#cloud3{
+    background-color: white;
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    top: 20px;
+    left: 60px;
+    border-radius: 50px;
+}
+#cloud4{
+    background-color: white;
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    top: 30px;
+    left: 240px;
+    border-radius: 50px;
 }

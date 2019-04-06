@@ -138,6 +138,40 @@
             border-radius: 75px;
             background: linear-gradient(rgba(230, 230, 230, 0.459),rgba(70, 70, 70, 0.534));
         }
+        #partleaves{
+            height: 70px;
+            width: 70px;
+            background-color:green;
+            position: absolute;
+            bottom: 330px;
+            left: 220px;
+            border-radius: 50px;
+        }
+        #partleaves::after{
+            content: '';
+            height: 70px;
+            width: 70px;
+            position:absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 50px;
+            background: linear-gradient(rgba(230, 230, 230, 0.062),rgba(70, 70, 70, 0.671));
+        }
+        #branch{
+            height: 20px;
+            width: 100px;
+            background-color:rgb(77, 31, 31);
+            position: absolute;
+            bottom: 330px;
+            left: 240px;
+            border-radius: 25px;
+            -moz-transform: rotate(32deg);
+            -webkit-transform: rotate(32deg);
+            -o-transform: rotate(32deg);
+            -ms-transform: rotate(32deg);
+            transform: rotate(35deg);
+
+        }
         #trunk{
             height:200px;
             width: 90px;
@@ -179,16 +213,19 @@
         #titleInfo {
             position: fixed;
             top: 10px;
+            left: 80px;
         }
         #email{
             position:fixed;
             top: 55px;
-            left: 30px;
+            left: 90px;
+            font-size: 18px;
         }
         #github{
             position:fixed;
-            top: 80px;
-            left: 30px;
+            top: 75px;
+            left: 90px;
+            font-size:18px;
         }
 a:visited{
         text-decoration: none;
@@ -230,13 +267,22 @@ p, li{
     <main>
         <div class="house">
             <div id="sky">
+                <div id="branch"></div>
+                <div id="partleaves"></div>
                 <div id="leaves"></div>
+
                 <div id="trunk"></div>
                 <div id="leaves2"></div>
                 <div id="trunk2"></div>
-                <h1 id="titleInfo">Quddus George</h1>
-                <h2 id="email">Here is my <a href="Mailto:quddus19@gmail.com">Email</a></h2>
-                <h2 id="github">Here is my <a href="https://github.com/Lastofthefirst">Github</a></h2>
+                <div id="cloud"></div>
+                <div id="cloud2"></div>
+                <div id="cloud3"></div>
+                <div id="cloud4"></div>
+                <div>
+                        <h1 id="titleInfo">Quddus George</h1>
+                        <h2 id="email">Here is my <a href="Mailto:quddus19@gmail.com">Email</a></h2>
+                        <h2 id="github">Here is my <a href="https://github.com/Lastofthefirst">Github</a></h2>
+                    </div>
             </div>
             <div id="grass"></div>
             <div class="panel" id="practical" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
