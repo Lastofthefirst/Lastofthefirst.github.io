@@ -147,6 +147,34 @@
             background-color: rgb(77, 31, 31);
             border-radius: 15px;
         }
+        #leaves2{
+            height:180px;
+            width: 330px;
+            position:absolute;
+            left: 550px;
+            bottom: 300px;
+            background-color: green;
+            border-radius: 75px;
+        }
+        #leaves2::after{
+            content: '';
+            height:180px;
+            width: 330px;
+            position:absolute;
+            bottom: 0px;
+            left: 0px;
+            border-radius: 75px;
+            background: linear-gradient(rgba(230, 230, 230, 0.459),rgba(70, 70, 70, 0.534));
+        }
+        #trunk2{
+            height:180px;
+            width: 90px;
+            position:absolute;
+            left: 670px;
+            bottom: 150px;
+            background-color: rgb(77, 31, 31);
+            border-radius: 15px;
+        }
 
         #titleInfo {
             position: fixed;
@@ -204,6 +232,8 @@ p, li{
             <div id="sky">
                 <div id="leaves"></div>
                 <div id="trunk"></div>
+                <div id="leaves2"></div>
+                <div id="trunk2"></div>
                 <h1 id="titleInfo">Quddus George</h1>
                 <h2 id="email">Here is my <a href="Mailto:quddus19@gmail.com">Email</a></h2>
                 <h2 id="github">Here is my <a href="https://github.com/Lastofthefirst">Github</a></h2>
