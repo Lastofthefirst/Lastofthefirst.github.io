@@ -17,7 +17,9 @@
             overflow: hidden;
         }
 
-        
+        body { 
+  overflow-x: hidden; 
+}
 #roof{
     background-color: rgb(97, 66, 66);
     height: 100px;
@@ -76,15 +78,16 @@
         }
         #grass {
             background-color: olivedrab;
-            width: 97vw;
+            width: 100vw;
             height: 300px;
             position: absolute;
             bottom: 0px;
+            left: 0px;
         }
         #grass::before{
             content: '';
             height: 300px;
-            width: 97vw;
+            width: 100vw;
             position:absolute;
             bottom: 0px;
             background: linear-gradient(rgba(114, 114, 114, 0.253),rgba(236, 236, 236, 0.253));
@@ -95,20 +98,22 @@
             width: 95vw;
             position:absolute;
             bottom: 60px;
+            left: 8px;
             background: linear-gradient(rgba(109, 88, 88, 0.397),rgba(70, 70, 70, 0.068));
         }
 
         #sky {
             background-color: rgb(163, 204, 216);
-            width: 97vw;
+            width: 100vw;
             height: 95vh;
             position: absolute;
             bottom: 140px;
+            left: 0px;
         }
         #sky::before{
             content: '';
             height: 250px;
-            width: 97vw;
+            width: 100vw;
             background: linear-gradient(rgba(219, 219, 219, 0.295), rgba(219, 219, 219, 0.034));
             position: absolute;
             top: 0px;
