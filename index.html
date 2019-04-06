@@ -113,15 +113,6 @@
             top: 0px;
             left: 0;
         }
-        #sky::after{
-            content: '';
-            height: 550px;
-            width: 97vw;
-            background: linear-gradient(rgba(168, 168, 168, 0.096), rgba(110, 110, 110, 0.363));
-            position: absolute;
-            top: 400px;
-            left: 0;
-        }
 
         #titleInfo {
             position: fixed;
@@ -155,7 +146,7 @@
                 <h2 id="github">Here is my Github</h2>
             </div>
             <div id="grass"></div>
-            <div class="panel" id="practical">
+            <div class="panel" id="practical" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
                 <p style="display: flex; justify-content: center;">Here are two example mobile apps I have made:</p>
                 <div style="display:flex; justify-content:space-between;">
                 <div style="margin-left:35px;">AlgorithMachine</div>
@@ -167,7 +158,7 @@
                 </div>
             </div>
             <button id="roof" class="accordion roof" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">Practical</button>
-            <div class="panel" id="skills" >
+            <div class="panel" id="skills" onclick="openHouse('skills', '100px', '456px', 'walls', '156px','600px')">
                 <p>I am confident in my fluency in Javascript, HTML, and CSS, as well as my ability to read and understand documentation in order to implement the corresponding code in my own projects.</p><p>My experience has refined my communication with team members. All my life I have been delving into new areas of learning, guiding my own studies. I bring</p>
                 <p>I am Delving Deeper into: Data structures, functional programming, Microsoft Azure, Node.js, </p>
             </div>
@@ -178,7 +169,7 @@
                 <div id="window1"><div id="window1frame"></div></div>
                 Structure</button>
 
-            <div class="panel" id="values">
+            <div class="panel" id="values" onclick="openHouse('values', '80px', '520px', 'foundation', '80px','600px')">
                 <p>I would like to create applications that help people, working remotely, being payed well enough to work 24 hour weeks and support my family, and learn lots along the way, especially about core elements.</p>
                 <p>This requires excellent, high quality work, and a deep understanding of the user stories, as well as user experience, combined with a resourceful mind being applied to the problem with concerted effort. Continual learning is essential, to propel forward in progress, or to delve deeply into the nature of the tasks at hand. The numerous spaces that have been created throughout the web provide an abundance of knowledge, experience, and perspective to draw on, and must be skillfully navigated and utelized.</p>
                 <p>Working remotely leaves the team members responsible to communicate effectively, manage their own time judiciously, and focus intently on the task at hand. Learn, learn, learn, strive to overcome obstacles that arise in the development process.</p>

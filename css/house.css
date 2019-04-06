@@ -142,7 +142,7 @@
 #window1{
     position: absolute;
     bottom: 80px;
-    left: 225px;
+    right: 100px;
     height: 70px;
     width: 70px;
     background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
