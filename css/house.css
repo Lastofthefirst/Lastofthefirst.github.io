@@ -137,7 +137,7 @@ body {
 
 
 #sky {
-    background-color: rgb(117, 199, 224);
+    background-color: rgb(63, 196, 236);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -284,6 +284,13 @@ li {
     margin: 5px;
     margin-top: 20px;
     min-width: 40vw;
+    position: relative;
+    flex-direction: row;
+}
+@media screen and (max-width: 550px) {
+    .cards{
+    flex-direction:column;
+    }
 }
  /* -------------------------------------
         ::BEFORE    SHADING    ::AFTER
