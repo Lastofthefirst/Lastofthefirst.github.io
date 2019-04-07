@@ -358,7 +358,7 @@ li {
     content: '';
     height: 300px;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     background: linear-gradient(rgba(114, 114, 114, 0.253), rgba(236, 236, 236, 0.253));
 }
@@ -367,7 +367,7 @@ li {
     content: '';
     height: 20px;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     bottom: 60px;
     left: 8px;
     background: linear-gradient(rgba(109, 88, 88, 0.397), rgba(70, 70, 70, 0.068));
