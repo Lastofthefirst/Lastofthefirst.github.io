@@ -1,6 +1,6 @@
 # Portfolio Page
 
-This is the portfolio page of Quddús George! It was built in pure html, css, and javascript, entirely handcoded. In order to display my ability to learn and employ new techniques I created this page using syntax and techniques I had no previous experience with in the span of two days.
+This is the portfolio page of Quddús George! It was built in pure html, css, and javascript, entirely handcoded. In order to display my ability to learn and employ new techniques I created this page using some syntax and many techniques I had no previous experience with in the span of two days.
 
 ## Getting Started
 
