@@ -137,7 +137,7 @@ body {
 
 
 #sky {
-    background-color: rgb(163, 204, 216);
+    background-color: rgb(117, 199, 224);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -288,7 +288,13 @@ li {
  /* -------------------------------------
         ::BEFORE    SHADING    ::AFTER
    -------------------------------------- */
-
+#trunk::before{
+  content: '';
+  height: 40px;
+  width: 90px;
+  position:absolute;
+  background: linear-gradient(rgba(53, 53, 53, 0.199), transparent)
+}
    .roof::before{
     content: '';
     height: 70px;
@@ -718,18 +724,20 @@ transform: rotate(175deg);
 #thirtyfive{
     position: absolute;
     bottom: 100px;
-    left: 360px;
+    left: 361px;
     height: 40px;
-    width: 45px;
+    width: 42px;
     background-color: navy;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 #thirtyfive::before{
     content: '';
     position: absolute;
-    bottom: -13px;
-    left: 7px;
+    bottom: -7px;
+    left: 16px;
     height: 30px;
-    width: 30px;
+    width: 18px;
     background-color: navy;
     -moz-transform: rotate(45deg);
 -webkit-transform: rotate(45deg);
