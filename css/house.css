@@ -129,7 +129,7 @@ body {
     background-color: olivedrab;
     width: 100vw;
     height: 300px;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0px;
 }
