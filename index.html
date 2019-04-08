@@ -39,11 +39,14 @@
             </div>
             <div id="grass"></div>
             <div class="panel" id="practical" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
-                <div style="display:flex; justify-content:space-around;">
-
-                    <div class="cards" style="display: flex; justify-content: space-around;"><a href="https://lastofthefirst.github.io/algorithmachine/" target="_blank"><img width="115px;" height="170px;" alt="Screenshot and link to AlgorithMachine App" src="AlgorithMachine.jpeg"></a>
-                        <div style="margin-left: 5px;">
-                            <h4>AlgorithMachine</h4>
+                <div id="card-container">
+                <div class="cards" style="display: flex; justify-content: space-around;">
+                    <div class="pictureframe">
+                    <a href="https://lastofthefirst.github.io/algorithmachine/" target="_blank"><img width="115px;" height="170px;" alt="Screenshot and link to AlgorithMachine App" src="AlgorithMachine.jpeg"></a>
+                </div>    
+                    <div class="applist">
+                            <div>AlgorithMachine</div>
+                            <div>Code</div>
                             <ul>
                                 <li>Javascript</li>
                                 <li>ES6</li>
@@ -53,10 +56,12 @@
                         </div>
                     </div>
                     <div class="cards" style="display: flex; justify-content: space-around;">
-
+                        <div class="pictureframe">
                         <a href="https://lastofthefirst.github.io/BookBox/" target="_blank"><img width="115px;" height="170px;" alt="Screenshot and link to BookBox App" src="bookbox.jpeg"></a>
-                        <div style="margin: 5px;">
-                            <h4>BookBox</h4>
+                        </div>
+                        <div class="applist">
+                            <div>BookBox</div>
+                            <div>Code</div>
                             <ul>
                                 <li>Javascript</li>
                                 <li>Swiper Api</li>
@@ -66,7 +71,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
             <button id="roof" class="accordion roof" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
                 <h2 class="bot">Projects</h2>

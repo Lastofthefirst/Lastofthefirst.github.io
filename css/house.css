@@ -55,7 +55,6 @@
 
 .panel {
     background-color: white;
-
     overflow: hidden;
 }
 
@@ -274,23 +273,45 @@ p,
 li {
     font-size: 2vh;
 }
-
+#card-container{
+    display:flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
 .cards {
-    background-color: white;
+    background-color: rgb(22, 117, 10);
     padding: 12px;
     padding-top: 12px;
     border-radius: 10px;
     box-shadow: 10px, 10px, 5px, black;
     margin: 5px;
-    margin-top: 20px;
+    margin-right: 3vw;
+    margin-left: 2vw;
     min-width: 40vw;
     position: relative;
     flex-direction: row;
+    flex: 1;
 }
 @media screen and (max-width: 550px) {
-    .cards{
-    flex-direction:column;
-    }
+    #card-container{
+        flex-direction: column;
+    }  
+}
+.pictureframe{
+    background-color: white;
+    height: 180px;
+    width: 125px;
+    border-radius: 5px;
+}
+img{
+    margin: 5px;
+    border-radius: 5px;
+}
+.applist{
+    background-color: rgb(226, 231, 226);
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
 }
  /* -------------------------------------
         ::BEFORE    SHADING    ::AFTER
@@ -316,7 +337,7 @@ li {
     content: '';
     height: 10px;
     width: 100vw;
-    background: linear-gradient(rgba(143, 143, 143, 0.096), rgba(143, 143, 143, 0.308));
+    background: linear-gradient(rgba(75, 75, 75, 0.342), rgba(75, 75, 75, 0.651));
     position: absolute;
     bottom: 0px;
     left: 0;
