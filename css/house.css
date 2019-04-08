@@ -124,107 +124,7 @@ body {
     z-index: 6;
 }
 
-#grass {
-    background-color: olivedrab;
-    width: 100vw;
-    height: 300px;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-}
 
-
-
-#sky {
-    background-color: rgb(63, 196, 236);
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-}
-
-#sky::before {
-    content: '';
-    height: 250px;
-    width: 100vw;
-    background: linear-gradient(rgba(219, 219, 219, 0.295), rgba(219, 219, 219, 0.034));
-    position: absolute;
-    top: 0px;
-    left: 0;
-}
-
-#leaves {
-    height: 180px;
-    width: 300px;
-    position: absolute;
-    left: 200px;
-    bottom: 510px;
-    background-color: green;
-    border-radius: 75px;
-}
-
-
-
-#partleaves {
-    height: 70px;
-    width: 70px;
-    background-color: green;
-    position: absolute;
-    bottom: 480px;
-    left: 220px;
-    border-radius: 50px;
-}
-
-
-
-#branch {
-    height: 20px;
-    width: 100px;
-    background-color: rgb(77, 31, 31);
-    position: absolute;
-    bottom: 480px;
-    left: 240px;
-    border-radius: 25px;
-    -moz-transform: rotate(32deg);
-    -webkit-transform: rotate(32deg);
-    -o-transform: rotate(32deg);
-    -ms-transform: rotate(32deg);
-    transform: rotate(35deg);
-
-}
-
-#trunk {
-    height: 200px;
-    width: 90px;
-    position: absolute;
-    left: 305px;
-    bottom: 330px;
-    background-color: rgb(77, 31, 31);
-    border-radius: 15px;
-}
-
-#leaves2 {
-    height: 180px;
-    width: 330px;
-    position: absolute;
-    left: 550px;
-    bottom: 400px;
-    background-color: green;
-    border-radius: 75px;
-}
-
-
-
-#trunk2 {
-    height: 180px;
-    width: 90px;
-    position: absolute;
-    left: 670px;
-    bottom: 250px;
-    background-color: rgb(77, 31, 31);
-    border-radius: 15px;
-}
 
 #titleInfo {
     position: fixed;
@@ -278,24 +178,45 @@ li {
     flex-direction: row;
     padding-top: 10px;
 }
-.cards {
-    background-color: rgb(11, 8, 37);
-    padding: 12px;
-    padding-top: 12px;
+.appcards {
+    background-color: rgb(190, 150, 105);
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 10px, 10px, 5px, black;
+    box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
     margin: 5px;
     margin-right: 3vw;
     margin-left: 2vw;
-    min-width: 40vw;
     position: relative;
     flex-direction: row;
-    flex: 1;
+    width: 400px;
+    height: 185px;
 }
-@media screen and (max-width: 550px) {
+.cards {
+    background-color: rgb(190, 150, 105);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
+    margin: 5px;
+    margin-right: 3vw;
+    margin-left: 2vw;
+    position: relative;
+    flex-direction: row;
+    width: 400px;
+    height: 185px;
+}
+.parag-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    position: relative;
+}
+@media screen and (max-width: 600px) {
     .card-container{
         flex-direction: column;
     }  
+    .parag-container{
+        flex-direction: column;
+    }
 }
 .pictureframe{
     background-color: white;
@@ -304,29 +225,39 @@ li {
     border-radius: 5px;
 }
 img{
-    margin: 5px;
     border-radius: 5px;
 }
-.applist{
+.cardInner{
     background-color:white;
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     color: rgb(11, 8, 37);
+    display: flex;
+    flex-direction: row;
+    height: 170px;
+}
+.applist{
+    padding: 15px;
 }
 .applist > div{
     font-weight: 600;
-}
-.paragframe{
-    padding: 5px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    background-color: white;
-    margin-bottom: 5px;
 }
 
  /* -------------------------------------
         ::BEFORE    SHADING    ::AFTER
    -------------------------------------- */
+
+
+   #sky::before {
+    content: '';
+    height: 250px;
+    width: 100vw;
+    background: linear-gradient(rgba(219, 219, 219, 0.295), rgba(219, 219, 219, 0.034));
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
 #trunk::before{
   content: '';
   height: 40px;
@@ -445,6 +376,100 @@ img{
  /* -------------------------------------
         DETAILS AND ORNAMENTAL ELEMENTS
    -------------------------------------- */
+
+
+   #grass {
+    background-color: olivedrab;
+    width: 100vw;
+    height: 300px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+
+#sky {
+    background-color: rgb(63, 196, 236);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+
+#leaves {
+    height: 180px;
+    width: 300px;
+    position: absolute;
+    left: 200px;
+    bottom: 510px;
+    background-color: green;
+    border-radius: 75px;
+}
+
+
+
+#partleaves {
+    height: 70px;
+    width: 70px;
+    background-color: green;
+    position: absolute;
+    bottom: 480px;
+    left: 220px;
+    border-radius: 50px;
+}
+
+
+
+#branch {
+    height: 20px;
+    width: 100px;
+    background-color: rgb(77, 31, 31);
+    position: absolute;
+    bottom: 480px;
+    left: 240px;
+    border-radius: 25px;
+    -moz-transform: rotate(32deg);
+    -webkit-transform: rotate(32deg);
+    -o-transform: rotate(32deg);
+    -ms-transform: rotate(32deg);
+    transform: rotate(35deg);
+
+}
+
+#trunk {
+    height: 300px;
+    width: 90px;
+    position: absolute;
+    left: 305px;
+    bottom: 230px;
+    background-color: rgb(77, 31, 31);
+    border-radius: 15px;
+}
+
+#leaves2 {
+    height: 180px;
+    width: 330px;
+    position: absolute;
+    left: 550px;
+    bottom: 400px;
+    background-color: green;
+    border-radius: 75px;
+}
+
+
+
+#trunk2 {
+    height: 180px;
+    width: 90px;
+    position: absolute;
+    left: 670px;
+    bottom: 250px;
+    background-color: rgb(77, 31, 31);
+    border-radius: 15px;
+}
 #frame{
     position: absolute;
     bottom: 0px;
