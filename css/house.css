@@ -273,13 +273,13 @@ p,
 li {
     font-size: 2vh;
 }
-#card-container{
+.card-container{
     display:flex;
     flex-direction: row;
     padding-top: 10px;
 }
 .cards {
-    background-color: rgb(22, 117, 10);
+    background-color: rgb(11, 8, 37);
     padding: 12px;
     padding-top: 12px;
     border-radius: 10px;
@@ -293,7 +293,7 @@ li {
     flex: 1;
 }
 @media screen and (max-width: 550px) {
-    #card-container{
+    .card-container{
         flex-direction: column;
     }  
 }
@@ -308,11 +308,22 @@ img{
     border-radius: 5px;
 }
 .applist{
-    background-color: rgb(226, 231, 226);
+    background-color:white;
     padding: 5px;
     border-radius: 5px;
-    color: black;
+    color: rgb(11, 8, 37);
 }
+.applist > div{
+    font-weight: 600;
+}
+.paragframe{
+    padding: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
  /* -------------------------------------
         ::BEFORE    SHADING    ::AFTER
    -------------------------------------- */
