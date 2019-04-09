@@ -59,7 +59,8 @@ body {
 
 }
 
-#practical {
+
+#practical {   
     position: absolute;
     bottom: 355px;
     background: rgb(235, 232, 232);
@@ -109,7 +110,7 @@ body {
     background-color: rgb(216, 0, 0);
     color: white;
     position: fixed;
-    height: 100px;
+    height: 110px;
     left: 50px;
     text-align: center;
     padding: 5px;
@@ -166,6 +167,9 @@ button {
 .bot {
     color: black;
     margin-right: 30px;
+    position: absolute;
+    bottom: -5px;
+    right: 15px;
 }
 
 .contact {
@@ -297,6 +301,7 @@ img:hover {
     flex-direction: column;
     box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
     margin: 5px;
+    padding-left: 15px;
 }
 
 @media screen and (max-width: 1200px) {
