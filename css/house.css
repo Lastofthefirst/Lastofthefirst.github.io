@@ -134,13 +134,13 @@ body {
 #titleInfo {
     position: fixed;
     top: 25px;
-    left: 75px;
+    left: 70px;
 }
 
 #email {
     position: fixed;
     top: 70px;
-    left: 30px;
+    left: 40px;
     font-size: 18px;
 }
 
@@ -719,7 +719,7 @@ img:hover {
     background-color: white;
     position: fixed;
     height: 70px;
-    width: 350px;
+    width: 380px;
     top: 50px;
     left: 20px;
     border-radius: 25px;
