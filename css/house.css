@@ -1,3 +1,7 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
 .accordion {
     background-color: #eee;
     color: #444;
@@ -8,49 +12,10 @@
     border: none;
     outline: none;
     transition: 0.4s;
-
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
 
 .accordion:hover {
-    background-color: rgb(225, 226, 196);
-}
-
-.roof {
-    /* clip-path: polygonpolygon(3.33px 161.47px,796.67px 162.47px,794.67px 41.53px,4.33px 42.53px);
-        */
-    background-color: rgb(131, 88, 88);
-    height: 100px;
-    width: 100vw;
-    position: absolute;
-    bottom: 355px;
-    -webkit-text-size-adjust: 100%;
-
-}
-
-
-
-.walls {
-    height: 200px;
-    width: 100vw;
-    position: absolute;
-    bottom: 156px;
-    background-color: rgb(231, 231, 222);
-    /*clip-path: polygon(0.67% 91.12%,99.21% 91.12%,99.33% 0.24%,0.29% 0.70%);
-        
-    */
-}
-
-
-
-.foundation {
-    background-color: rgb(209, 208, 208);
-    width: 100vw;
-    height: 80px;
-    position: absolute;
-    bottom: 80px;
+    box-shadow: -5px -5px 5px rgb(255, 255, 255);
 }
 
 .panel {
@@ -112,6 +77,7 @@ body {
     height: 200px;
     transition: 0.4s;
     z-index: 4;
+    overflow: scroll;
 }
 
 #values {
@@ -122,29 +88,62 @@ body {
     height: 80px;
     transition: 0.4s;
     z-index: 6;
+    overflow: scroll;
 }
 
+#signpost {
+    position: fixed;
+    height: 200px;
+    width: 20px;
+    left: 110px;
+    bottom: 10px;
+    background-color: rgb(71, 33, 33);
+    border-radius: 3px;
+    z-index: 10;
+    transition: 2s;
+}
 
+#signpost::before {
+    content: '';
+    width: 130px;
+    background-color: rgb(216, 0, 0);
+    color: white;
+    position: fixed;
+    height: 100px;
+    left: 50px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid;
+    display: block;
+}
+
+#signpost:hover::before {
+    background-color: rgb(243, 88, 88);
+}
+
+#signtext {
+    color: white;
+    position: absolute;
+    left: -55px;
+    top: 8px;
+    width: 130px;
+    text-align: center;
+}
 
 #titleInfo {
     position: fixed;
-    top: 10px;
+    top: 25px;
     left: 75px;
 }
 
 #email {
     position: fixed;
-    top: 55px;
-    left: 90px;
+    top: 70px;
+    left: 30px;
     font-size: 18px;
 }
 
-#github {
-    position: fixed;
-    top: 75px;
-    left: 90px;
-    font-size: 18px;
-}
 
 a:visited {
     text-decoration: none;
@@ -152,7 +151,6 @@ a:visited {
 }
 
 button {
-    font-family: Georgia, serif;
     font-size: 22px;
     letter-spacing: -0.4px;
     word-spacing: 0px;
@@ -167,88 +165,153 @@ button {
 
 .bot {
     color: black;
+    margin-right: 30px;
+}
+
+.contact {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 1px rgba(105, 105, 105, 0.637);
+    font-size: 16px;
+    display: absolute;
+    right: 5px;
+}
+
+.contact:hover {
+    color: white;
+    background-color: black;
+    box-shadow: none;
 }
 
 p,
 li {
     font-size: 2vh;
 }
-.card-container{
-    display:flex;
+
+.card-container {
+    display: flex;
     flex-direction: row;
     padding-top: 10px;
+    float: right;
 }
-.appcards {
-    background-color: rgb(190, 150, 105);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
-    margin: 5px;
-    margin-right: 3vw;
-    margin-left: 2vw;
-    position: relative;
-    flex-direction: row;
-    width: 400px;
-    height: 185px;
-}
-.cards {
-    background-color: rgb(190, 150, 105);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
-    margin: 5px;
-    margin-right: 3vw;
-    margin-left: 2vw;
-    position: relative;
-    flex-direction: row;
-    width: 400px;
-    height: 185px;
-}
-.parag-container{
+
+.parag-container {
     display: flex;
     flex-direction: row;
     padding-top: 10px;
     position: relative;
 }
-@media screen and (max-width: 600px) {
-    .card-container{
+
+@media screen and (max-width: 1000px) {
+    .card-container {
         flex-direction: column;
-    }  
-    .parag-container{
+    }
+
+    .parag-container {
         flex-direction: column;
     }
 }
-.pictureframe{
+
+.codelink {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
     background-color: white;
-    height: 180px;
-    width: 125px;
+    color: rgb(139, 111, 78);
+    border: 2px solid rgb(139, 111, 78);
     border-radius: 5px;
+    box-shadow: 0.5px 0.5px 1px rgba(105, 105, 105, 0.637);
+    font-size: 16px;
+    display: absolute;
+    right: 5px;
+    margin-bottom: 3px;
 }
-img{
+
+.codelink:hover {
+    background-color: rgb(139, 111, 78);
+    color: white;
+}
+
+img {
     border-radius: 5px;
+    height: 97%;
+    max-width: 125px;
 }
-.cardInner{
-    background-color:white;
+
+img:hover {
+    box-shadow: 1px 1.5px 2px rgba(141, 141, 141, 0.699);
+}
+
+.cardInner {
+    background-color: white;
     padding: 8px;
     border-radius: 5px;
     color: rgb(11, 8, 37);
     display: flex;
     flex-direction: row;
-    height: 170px;
-}
-.applist{
-    padding: 15px;
-}
-.applist > div{
-    font-weight: 600;
+    height: 190px;
+    position: relative;
+    box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
+    margin: 5px;
+    margin-right: 3vw;
+    margin-left: 2vw;
 }
 
- /* -------------------------------------
+.appheader {
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.applist {
+    padding: 15px;
+}
+
+.listheading {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.appinfo {
+    background-color: rgba(236, 239, 241, 0.479);
+    border-radius: 5px;
+    padding: 5px;
+    height: 145px;
+}
+
+.textcard {
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    color: rgb(11, 8, 37);
+    display: flex;
+    height: 190px;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
+    margin: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .textcard {
+        height: auto;
+        overflow: auto;
+    }
+}
+
+/* -------------------------------------
         ::BEFORE    SHADING    ::AFTER
    -------------------------------------- */
 
 
-   #sky::before {
+#sky::before {
     content: '';
     height: 250px;
     width: 100vw;
@@ -258,15 +321,16 @@ img{
     left: 0;
 }
 
-#trunk::before{
-  content: '';
-  height: 40px;
-  width: 90px;
-  border-radius:15px;
-  position:absolute;
-  background: linear-gradient(rgba(53, 53, 53, 0.199), transparent)
+#trunk::before {
+    content: '';
+    height: 40px;
+    width: 90px;
+    border-radius: 15px;
+    position: absolute;
+    background: linear-gradient(rgba(53, 53, 53, 0.199), transparent)
 }
-   .roof::before{
+
+.roof::before {
     content: '';
     height: 70px;
     width: 100vw;
@@ -275,7 +339,8 @@ img{
     top: 0px;
     left: 0;
 }
-.roof::after{
+
+.roof::after {
     content: '';
     height: 10px;
     width: 100vw;
@@ -286,16 +351,17 @@ img{
 }
 
 
-   .walls::before{
+.walls::before {
     content: '';
     height: 10px;
     width: 100vw;
-    background: linear-gradient(rgba(128, 128, 128, 0.438),rgba(128, 128, 128, 0.253));
+    background: linear-gradient(rgba(128, 128, 128, 0.438), rgba(128, 128, 128, 0.253));
     position: absolute;
     top: 0px;
     left: 0;
 }
-.walls::after{
+
+.walls::after {
     content: '';
     height: 150px;
     width: 100vw;
@@ -305,20 +371,21 @@ img{
     left: 0;
 }
 
-.foundation::before{
+.foundation::before {
     content: '';
     height: 40px;
     width: 100vw;
-    background: linear-gradient(rgba(116, 116, 116, 0.253),rgba(211, 211, 211, 0.322));
+    background: linear-gradient(rgba(116, 116, 116, 0.253), rgba(211, 211, 211, 0.322));
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.foundation::after{
+
+.foundation::after {
     content: '';
     height: 40px;
     width: 100vw;
-    background: linear-gradient(rgba(211, 211, 211, 0.062),rgba(88, 88, 88, 0.342));
+    background: linear-gradient(rgba(211, 211, 211, 0.062), rgba(88, 88, 88, 0.342));
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -342,6 +409,7 @@ img{
     left: 8px;
     background: linear-gradient(rgba(109, 88, 88, 0.397), rgba(70, 70, 70, 0.068));
 }
+
 #leaves::after {
     content: '';
     height: 180px;
@@ -363,6 +431,7 @@ img{
     border-radius: 50px;
     background: linear-gradient(rgba(230, 230, 230, 0.062), rgba(70, 70, 70, 0.671));
 }
+
 #leaves2::after {
     content: '';
     height: 180px;
@@ -373,12 +442,13 @@ img{
     border-radius: 75px;
     background: linear-gradient(rgba(230, 230, 230, 0.459), rgba(70, 70, 70, 0.534));
 }
- /* -------------------------------------
+
+/* -------------------------------------
         DETAILS AND ORNAMENTAL ELEMENTS
    -------------------------------------- */
 
 
-   #grass {
+#grass {
     background-color: olivedrab;
     width: 100vw;
     height: 300px;
@@ -470,7 +540,8 @@ img{
     background-color: rgb(77, 31, 31);
     border-radius: 15px;
 }
-#frame{
+
+#frame {
     position: absolute;
     bottom: 0px;
     left: 65px;
@@ -478,7 +549,8 @@ img{
     width: 90px;
     background-color: rgb(121, 67, 67);
 }
-#door{
+
+#door {
     position: absolute;
     bottom: 5px;
     left: 70px;
@@ -487,7 +559,7 @@ img{
     background-color: rgb(240, 238, 230);
 }
 
-#doorknob{
+#doorknob {
     position: absolute;
     bottom: 60px;
     left: 135px;
@@ -497,7 +569,7 @@ img{
     background-color: rgb(201, 201, 63);
 }
 
-#frame2{
+#frame2 {
     position: absolute;
     bottom: 0px;
     left: 565px;
@@ -505,7 +577,8 @@ img{
     width: 90px;
     background-color: rgb(121, 67, 67);
 }
-#door2{
+
+#door2 {
     position: absolute;
     bottom: 5px;
     left: 570px;
@@ -514,7 +587,7 @@ img{
     background-color: rgb(240, 238, 230);
 }
 
-#doorknob2{
+#doorknob2 {
     position: absolute;
     bottom: 60px;
     left: 635px;
@@ -524,7 +597,7 @@ img{
     background-color: rgb(201, 201, 63);
 }
 
-#frame3{
+#frame3 {
     position: absolute;
     bottom: 0px;
     left: 730px;
@@ -532,7 +605,8 @@ img{
     width: 90px;
     background-color: rgb(121, 67, 67);
 }
-#door3{
+
+#door3 {
     position: absolute;
     bottom: 5px;
     left: 735px;
@@ -541,7 +615,7 @@ img{
     background-color: rgb(240, 238, 230);
 }
 
-#doorknob3{
+#doorknob3 {
     position: absolute;
     bottom: 60px;
     left: 800px;
@@ -551,16 +625,17 @@ img{
     background-color: rgb(201, 201, 63);
 }
 
-#window2{
+#window2 {
     position: absolute;
     bottom: 80px;
     left: 430px;
     height: 100px;
     width: 100px;
-    background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+    background: linear-gradient(rgb(181, 253, 250), rgb(157, 193, 209));
     border: solid, black, 8px;
 }
-#windowVert2{
+
+#windowVert2 {
     position: absolute;
     bottom: 80px;
     left: 475px;
@@ -569,7 +644,8 @@ img{
     background-color: rgb(236, 236, 236);
     border: solid, black, 8px;
 }
-#windowHor2{
+
+#windowHor2 {
     position: absolute;
     bottom: 120px;
     left: 430px;
@@ -579,16 +655,17 @@ img{
     border: solid, black, 8px;
 }
 
-#window3{
+#window3 {
     position: absolute;
     bottom: 80px;
     left: 910px;
     height: 100px;
     width: 100px;
-    background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+    background: linear-gradient(rgb(181, 253, 250), rgb(157, 193, 209));
     border: solid, black, 8px;
 }
-#windowVert3{
+
+#windowVert3 {
     position: absolute;
     bottom: 80px;
     left: 955px;
@@ -597,7 +674,8 @@ img{
     background-color: rgb(236, 236, 236);
     border: solid, black, 8px;
 }
-#windowHor3{
+
+#windowHor3 {
     position: absolute;
     bottom: 120px;
     left: 910px;
@@ -607,16 +685,17 @@ img{
     border: solid, black, 8px;
 }
 
-#window4{
+#window4 {
     position: absolute;
     bottom: 80px;
     left: 1110px;
     height: 100px;
     width: 100px;
-    background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+    background: linear-gradient(rgb(181, 253, 250), rgb(157, 193, 209));
     border: solid, black, 8px;
 }
-#windowVert4{
+
+#windowVert4 {
     position: absolute;
     bottom: 80px;
     left: 1155px;
@@ -625,7 +704,8 @@ img{
     background-color: rgb(236, 236, 236);
     border: solid, black, 8px;
 }
-#windowHor4{
+
+#windowHor4 {
     position: absolute;
     bottom: 120px;
     left: 1110px;
@@ -635,7 +715,7 @@ img{
     border: solid, black, 8px;
 }
 
-#cloud{
+#cloud {
     background-color: white;
     position: fixed;
     height: 70px;
@@ -644,7 +724,8 @@ img{
     left: 20px;
     border-radius: 25px;
 }
-#cloud2{
+
+#cloud2 {
     background-color: white;
     position: fixed;
     height: 80px;
@@ -653,7 +734,8 @@ img{
     left: 120px;
     border-radius: 45px;
 }
-#cloud3{
+
+#cloud3 {
     background-color: white;
     position: fixed;
     height: 80px;
@@ -662,7 +744,8 @@ img{
     left: 60px;
     border-radius: 50px;
 }
-#cloud4{
+
+#cloud4 {
     background-color: white;
     position: fixed;
     height: 80px;
@@ -672,16 +755,17 @@ img{
     border-radius: 50px;
 }
 
-#window1{
+#window1 {
     position: absolute;
     bottom: 80px;
     left: 230px;
     height: 100px;
     width: 100px;
-    background: linear-gradient(rgb(181, 253, 250),rgb(157, 193, 209));
+    background: linear-gradient(rgb(181, 253, 250), rgb(157, 193, 209));
     border: solid, black, 8px;
 }
-#windowVert{
+
+#windowVert {
     position: absolute;
     bottom: 80px;
     left: 275px;
@@ -690,7 +774,8 @@ img{
     background-color: rgb(236, 236, 236);
     border: solid, black, 8px;
 }
-#windowHor{
+
+#windowHor {
     position: absolute;
     bottom: 120px;
     left: 230px;
@@ -700,7 +785,7 @@ img{
     border: solid, black, 8px;
 }
 
-#porch{
+#porch {
     position: absolute;
     bottom: 40px;
     left: 60px;
@@ -710,7 +795,7 @@ img{
     background: linear-gradient(rgb(184, 175, 149), rgba(214, 206, 181, 0.479))
 }
 
-#porch2{
+#porch2 {
     position: absolute;
     bottom: 40px;
     left: 560px;
@@ -720,7 +805,7 @@ img{
     background: linear-gradient(rgb(184, 175, 149), rgba(214, 206, 181, 0.479))
 }
 
-#porch3{
+#porch3 {
     position: absolute;
     bottom: 40px;
     left: 725px;
@@ -730,7 +815,7 @@ img{
     background: linear-gradient(rgb(184, 175, 149), rgba(214, 206, 181, 0.479))
 }
 
-#head{
+#head {
     position: absolute;
     bottom: 90px;
     left: 232px;
@@ -739,7 +824,8 @@ img{
     border-radius: 50px;
     background-color: black;
 }
-#wave1{
+
+#wave1 {
     position: absolute;
     bottom: 77px;
     left: 255px;
@@ -753,7 +839,8 @@ img{
     -ms-transform: rotate(250deg);
     transform: rotate(250deg);
 }
-#wave2{
+
+#wave2 {
     position: absolute;
     bottom: 92px;
     left: 265px;
@@ -762,12 +849,13 @@ img{
     border-radius: 50px;
     background-color: black;
     -moz-transform: rotate(175deg);
--webkit-transform: rotate(175deg);
--o-transform: rotate(175deg);
--ms-transform: rotate(175deg);
-transform: rotate(175deg);
+    -webkit-transform: rotate(175deg);
+    -o-transform: rotate(175deg);
+    -ms-transform: rotate(175deg);
+    transform: rotate(175deg);
 }
-#body{
+
+#body {
     position: absolute;
     bottom: 80px;
     left: 235px;
@@ -776,7 +864,8 @@ transform: rotate(175deg);
 
     background-color: black;
 }
-#shoulder{
+
+#shoulder {
     position: absolute;
     bottom: 80px;
     left: 230px;
@@ -786,7 +875,7 @@ transform: rotate(175deg);
     background-color: black;
 }
 
-#thirtyfive{
+#thirtyfive {
     position: absolute;
     bottom: 100px;
     left: 361px;
@@ -796,7 +885,8 @@ transform: rotate(175deg);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-#thirtyfive::before{
+
+#thirtyfive::before {
     content: '';
     position: absolute;
     bottom: -7px;
@@ -805,12 +895,13 @@ transform: rotate(175deg);
     width: 18px;
     background-color: navy;
     -moz-transform: rotate(45deg);
--webkit-transform: rotate(45deg);
--o-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
-#thirtyfiveNum{
+
+#thirtyfiveNum {
     position: absolute;
     bottom: 95px;
     left: 368px;

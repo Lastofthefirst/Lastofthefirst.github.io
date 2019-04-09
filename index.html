@@ -7,11 +7,6 @@
 
     <link rel="stylesheet" href="css/house.css">
     <style>
-        /* Style the buttons that are used to open and close the accordion panel */
-
-
-        /* Style the accordion panel. Note: hidden by default */
-     
     </style>
     <title>Quddús George|Javascript Dev</title>
 </head>
@@ -33,69 +28,57 @@
                 <div id="cloud4"></div>
                 <div>
                     <h1 id="titleInfo">Quddus George</h1>
-                    <h2 id="email">Here is my <a href="Mailto:quddus19@gmail.com">Email</a></h2>
-                    <h2 id="github">Here is my <a href="https://github.com/Lastofthefirst">Github</a></h2>
+                    <h2 id="email"><a href="Mailto:quddus19@gmail.com"><button class="contact">Email</button></a> and <a target="_blank" href="https://github.com/Lastofthefirst"><button class="contact">Github</button></a> or <a target="_blank" href="https://github.com/Lastofthefirst/Lastofthefirst.github.io"><button class="contact">Source Code</button></a></h2>
                 </div>
             </div>
             <div id="grass"></div>
             <div class="panel" id="practical" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
                 <div class="card-container">
-                <div class="appcards">
-                   <div class="cardInner">
-                    <a href="https://lastofthefirst.github.io/algorithmachine/" target="_blank"><img width="115px;" height="170px;" alt="Screenshot and link to AlgorithMachine App" src="AlgorithMachine.jpeg"></a>   
-<div class="applist">
-                            <div>AlgorithMachine</div>
-                            <a href="https://github.com/Lastofthefirst/algorithmachine">Code</a>
-                            <ul>
-                                <li>Javascript</li>
-                                <li>ES6</li>
-                                <li>Functional Programming</li>
-                                <li>Framework7</li>
-                            </ul>
-                        </div>
+                    <div class="cardInner">
+                        <a href="https://lastofthefirst.github.io/algorithmachine/" target="_blank"><img alt="Screenshot and link to AlgorithMachine App" src="AlgorithMachine.jpeg"></a>
+                        <div class="applist">
+                            <div class="appheader">
+                                <div class="listheading">AlgorithMachine</div>
+                                <a href="https://github.com/Lastofthefirst/BookBox" target="_blank"><button class="codelink">Source Code</button></a>
+                            </div>
+                            <div class="appinfo"> It was while scripting this application that functional coding really clicked for me. In writing the algorithms I enjoyed finding new ways to utilize the syntax introduced with ES6 anywhere I could.
+                            </div>
                         </div>
                     </div>
 
-                    <div class="appcards">
-                            <div class="cardInner">
-                        <a href="https://lastofthefirst.github.io/BookBox/" target="_blank"><img width="115px;" height="170px;" alt="Screenshot and link to BookBox App" src="bookbox.jpeg"></a>
-<div class="applist">
-                            <div>BookBox</div>
-                            <a href="https://github.com/Lastofthefirst/BookBox" target="_blank">Code</a>
-                            <p>
-                                Javascript
-                                Swiper Api
-                                Functional Programming
-                                Framework7
-                                LocalForage
-                            </p>
+                    <div class="cardInner">
+                        <a href="https://lastofthefirst.github.io/BookBox/" target="_blank"><img alt="Screenshot and link to BookBox App" src="bookbox.jpeg"></a>
+                        <div class="applist">
+                            <div class="appheader">
+                                <div class="listheading">BookBox</div>
+                                <a href="https://github.com/Lastofthefirst/BookBox" target="_blank"><button class="codelink">Source Code</button></a>
+                            </div>
+                            <div class="appinfo"> Making Bookbox learned more about the design process, and what it looks like to develop a solution to an identified need. It was built in Framework7, and I gained some experience with the swiper API.
+                            </div>
                         </div>
                     </div>
-                    </div>
-                </div>  
-            </div>
+
+                </div>
             </div>
             <button id="roof" class="accordion roof" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
                 <h2 class="bot">Projects</h2>
             </button>
             <div class="panel" id="skills" onclick="openHouse('skills', '100px', '246px', 'walls', '156px','400px')">
-                    <div class="parag-container">
-                <div class="cards">
-                        <div class="cardInner">
-                               I am fluent in Javascript, HTML, and CSS scripting, and have proven ability to quickly analyze and apply documentation to real-world projects.
-                        </div>
+                <div class="parag-container">
+                    <div class="textcard">
+                        <div class="listheading">Mastery</div>
+                        I am fluent in Javascript, HTML, and CSS scripting, and have proven ability to quickly analyze and apply documentation to real-world projects.
+                    </div>
+                    <div class="textcard">
+                        <div class="listheading">Character</div>
+                        My experience has refined my ability to communicate effectively with team members. Throughout my life I have embraced new areas of learning and have guided my own studies. Some personal strengths that I bring to my work are my ability to work independently, collaborate with a team, and contribute toward common objectives.
+                    </div>
+
+                    <div class="textcard">
+                        <div class="listheading">Going Forward</div>
+                        I am curently interested in strengthening my skills around data structures, functional programming, Microsoft Azure, and Node.js.
+                    </div>
                 </div>
-                <div class="cards">
-                        <div class="cardInner">
-                                            My experience has refined my ability to communicate effectively with team members. Throughout my life I have embraced new areas of learning and have guided my own studies. Some personal strengths that I bring to my work are my ability to work independently, collaborate with a team, and contribute toward common objectives.
-                                        </div>
-                                    </div>
-                                    <div class="cards">
-                                        <div class="cardInner">
-                                            I am curently interested in strengthening my skills around data structures, functional programming, Microsoft Azure, and Node.js.</div>
-                                        </div>
-                </div>
-            </div>
             </div>
             <button id="walls" class="accordion walls" onclick="openHouse('skills', '100px', '246px', 'walls', '156px','400px')">
                 <div id="frame"></div>
@@ -126,36 +109,39 @@
                 <div id="windowHor4"></div>
                 <div id="thirtyfive"></div>
                 <div id="thirtyfiveNum">35</div>
-                 <h2 style="position:absolute; bottom: 0px; right: 20px;" class="bot">
+                <h2 style="position:absolute; bottom: 0px; right: 20px;" class="bot">
                     Skills</h2>
             </button>
 
             <div class="panel" id="values" onclick="openHouse('values', '80px', '240px', 'foundation', '80px','320px')">
                 <div class="parag-container">
-                <div class="cards">
-                    <div class="cardInner">
-                    <p>I would like to create applications that apply technology to solve problems, especially those faced by people in my region, working remotely, being payed well enough to work 24 hour weeks and support my family, and learn lots along the way, especially about core elements.</p>
-                    <p>This requires <b>excellent</b>, <b>high quality</b> work, and a <b>deep understanding</b> of the user stories, as well as user experience, combined with a resourceful mind being applied to the problem with concerted effort. Continual learning is essential, to propel forward in progress, or to delve deeply into the nature of the tasks at hand. The numerous spaces that have been created throughout the web provide an abundance of knowledge, experience, and perspective to draw on, and must be <b>skillfully navigated</b> and utelized.</p>
-                    <p>Working remotely leaves the team members responsible to communicate effectively, manage their own time judiciously, and focus intently on the task at hand. Learn, learn, learn, strive to overcome obstacles that arise in the development process.</p>
+                    <div class="textcard">
+                        <div class="listheading">Goal</div> I aim to create applications that apply technology to solve problems, especially those face by people in my own region. I envision a 24 hour week, working remotely learning along the way while earning enough to support my family.
+                    </div>
+                    <div class="textcard">
+                        <div class="listheading">Requirements</div> This ideal would not come without its own requirements. Excellent, high quality work, and deep thoughtful reflection on the experience and needs of the user is a necessity. Continual learning, and a resourceful mind need to paired together to form creative solutions. The ability to navigate and a familiarity with the abundance of knowledge and experienced housed in the various corners of the internet is imperative.
+                    </div>
+                    <div class="textcard">
+                        <div class="listheading">Responsibilities</div>
+                        Collaboration of any kind bestows on all involved the responsibility to communicate effectively with one another, to manage their own time judiciously, and to focus on the task at hand. Furthermore a developer is responsible for finding the requisite information to solve any problems that arise during the development process. Working remotely makes each of these responsibilities more pronounced whilst allowing for new heights of efficiency and a wider pool of contributors.
+                    </div>
                 </div>
             </div>
-            </div>
-            </div>
-
             <button id="foundation" class="accordion foundation" onclick="openHouse('values', '80px', '240px', 'foundation', '80px','320px')">
-                    <div id="porch"></div>
-                    <div id="porch2"></div>
-                    <div id="porch3"></div>
+                <div id="porch"></div>
+                <div id="porch2"></div>
+                <div id="porch3"></div>
                 <h2 class="bot">Foundation</h2>
             </button>
+        </div>
+        <div id="signpost" onclick="expand('signpost','200px','10px')">
+            <div id="signtext">Apartment <br>for Rent Handwritten Pure CSS <br> No Lead Paint</div>
         </div>
     </main>
 </body>
 <script>
     function openHouse(infoId, heightIn, heightOut, houseId, bottomIn, bottomOut) {
-        let docHeight = document.documentElement.clientHeight;
-        let docWidth = document.documentElement.clientWidth;
-        if (docHeight > docWidth) {
+        if (1000 > document.documentElement.clientWidth) {
             let hC = Number(heightOut.replace('px', '')) + 200,
                 bC = Number(bottomOut.replace('px', '')) + 200;
             heightOut = hC + 'px';
@@ -174,19 +160,8 @@
 
     function open(thisId, thisBottom, thisNewBottom) {
         let change = document.getElementById(thisId).style;
-        console.log(change);
         change.bottom = change.bottom === thisNewBottom ? thisBottom : thisNewBottom;
     }
-    /*
-        function open() {
-            this.classList.toggle("active");
-            let panel = this.previousElementSibling.style;
-            panel.display = panel.display === 'block' ? 'none' : 'block';
-        };
-
-        const acc = document.querySelectorAll('.accordion');
-        [...acc].forEach(acc => acc.addEventListener('click', open));
-    */
 </script>
 
 </html>
