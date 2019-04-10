@@ -106,12 +106,12 @@ body {
 
 #signpost::before {
     content: '';
-    width: 130px;
+    width: 180px;
     background-color: rgb(216, 0, 0);
     color: white;
     position: fixed;
-    height: 110px;
-    left: 50px;
+    height: 70px;
+    left: 25px;
     text-align: center;
     padding: 5px;
     border-radius: 5px;
@@ -126,10 +126,11 @@ body {
 #signtext {
     color: white;
     position: absolute;
-    left: -55px;
+    left: -75px;
     top: 8px;
-    width: 130px;
+    width: 180px;
     text-align: center;
+    padding-top: 5px;
 }
 
 #titleInfo {
