@@ -89,7 +89,6 @@ body {
     height: 80px;
     transition: 0.4s;
     z-index: 6;
-    overflow: scroll;
 }
 
 #signpost {
@@ -325,6 +324,7 @@ img:hover {
     box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
     margin: 5px;
     padding-left: 15px;
+    margin-right: 20px;
 }
 @media screen and (max-width: 1200px) {
     .textcard {
