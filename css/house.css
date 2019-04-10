@@ -209,6 +209,13 @@ li {
     padding-top: 10px;
     position: relative;
 }
+.parag-container2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    position: relative;
+    justify-content: center;
+}
 
 @media screen and (max-width: 1000px) {
     .card-container {
@@ -304,10 +311,29 @@ img:hover {
     padding-left: 15px;
 }
 
+.textcard2 {
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    color: rgb(11, 8, 37);
+    display: flex;
+    height: auto;
+    width: 25%;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
+    margin: 5px;
+    padding-left: 15px;
+}
 @media screen and (max-width: 1200px) {
     .textcard {
         height: auto;
         overflow: auto;
+    }
+    .textcard2 {
+        height: auto;
+        overflow: auto;
+        width: auto;
     }
 }
 
