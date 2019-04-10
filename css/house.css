@@ -127,10 +127,10 @@ body {
     color: white;
     position: absolute;
     left: -75px;
-    top: 8px;
     width: 180px;
+    height: 70px;
     text-align: center;
-    padding-top: 5px;
+    transform: translateY(20%);
 }
 
 #titleInfo {
