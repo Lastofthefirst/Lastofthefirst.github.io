@@ -965,18 +965,6 @@ img:hover {
     border-radius: 5px;
     background-color:white;
 }
-#rope{
-    width: 10px;
-    height: 0px;
-    position: fixed;
-    left: 238px;
-    top: 112px;
-    background-color: black;
-    transition: 0.4s;
-}
-#pdf{
-    border-radius: 50px;
-}
 #embedIt{
     height: 0px;
     width: 500px;
