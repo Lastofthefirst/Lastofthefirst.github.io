@@ -263,7 +263,7 @@ img:hover {
     display: flex;
     flex-direction: row;
     height: 190px;
-    width: 40%;
+    width: 43%;
     position: relative;
     box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
     -webkit-box-shadow:1px 3px 5px rgba(105, 105, 105, 0.637);
@@ -307,6 +307,7 @@ img:hover {
     border-radius: 5px;
     padding: 5px;
     height: 145px;
+    overflow-y:auto;
 }
 
 .textcard {
@@ -950,7 +951,7 @@ img:hover {
 #thirtyfiveNum {
     position: absolute;
     bottom: 95px;
-    left: 368px;
+    left: 369.5px;
     height: 40px;
     color: white;
 }
