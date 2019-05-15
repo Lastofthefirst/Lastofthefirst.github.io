@@ -31,7 +31,7 @@
                     <h2 id="email"><a href="Mailto:lastof@pm.me"><button class="contact">Email</button></a> <a target="_blank" href="https://github.com/Lastofthefirst"><button class="contact">Github</button></a> and 
                         
                         
-                        <button onclick="expand('embedIt', '0px', '380px');" class="contact">Resume</button> or <a target="_blank" href="https://github.com/Lastofthefirst/Lastofthefirst.github.io"><button class="contact">Source Code</button></a></h2>
+                        <button onclick="expandS('embedIt', '0px', '380px');" class="contact">Resume</button> or <a target="_blank" href="https://github.com/Lastofthefirst/Lastofthefirst.github.io"><button class="contact">Source Code</button></a></h2>
                 </div>
             </div>
             <div id="resumeFloatup"><embed id="embedIt" src="Resume.pdf" 
@@ -181,7 +181,17 @@
 
         change.height = change.height === thisNewHeight ? thisHeight : thisNewHeight;
     }
-
+    function expandS(thisId, thisHeight, thisNewHeight) {
+        let change = document.getElementById(thisId).style;
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    // Take the user to a different screen here.
+            let hC = Number(thisNewHeight.replace('px', '')) + 200,
+            heightOut = hC + 'px';
+            change.height = change.height === heightOut ? thisHeight : heightOut;
+        } else {
+            change.height = change.height === thisNewHeight ? thisHeight : thisNewHeight;
+        }
+    }
     function open(thisId, thisBottom, thisNewBottom) {
         let change = document.getElementById(thisId).style;
         change.bottom = change.bottom === thisNewBottom ? thisBottom : thisNewBottom;
