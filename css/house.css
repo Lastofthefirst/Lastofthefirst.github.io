@@ -80,7 +80,7 @@ body {
     height: 200px;
     transition: 0.4s;
     z-index: 4;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #values {
@@ -323,6 +323,7 @@ img:hover {
     -webkit-box-shadow:1px 3px 5px rgba(105, 105, 105, 0.637);
     margin: 5px;
     padding-left: 15px;
+    margin-right: 15px;
 }
 
 .textcard2 {
@@ -957,12 +958,12 @@ img:hover {
 }
 #resumeFloatup{
     position:fixed;
-    top: 112px;
-    left: 238px;
+    top: 115px;
+    left: 30px;
     transition: 0.8s;
     height: 0px;
     border-radius: 5px;
-    background-color:grey;
+    background-color:white;
 }
 #rope{
     width: 10px;
@@ -975,4 +976,10 @@ img:hover {
 }
 #pdf{
     border-radius: 50px;
+}
+#embedIt{
+    height: 0px;
+    width: 500px;
+    transition: 0.8s;
+    background-color: white;
 }

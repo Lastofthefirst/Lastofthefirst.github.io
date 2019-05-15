@@ -28,9 +28,16 @@
                 <div id="cloud4"></div>
                 <div>
                     <h1 id="titleInfo">Quddus George</h1>
-                    <h2 id="email"><a href="Mailto:lastof@pm.me"><button class="contact">Email</button></a> <a target="_blank" href="https://github.com/Lastofthefirst"><button class="contact">Github</button></a> and <a target="_blank" href="resume.pdf"><button class="contact">Resume</button></a></a> or <a target="_blank" href="https://github.com/Lastofthefirst/Lastofthefirst.github.io"><button class="contact">Source Code</button></a></h2>
+                    <h2 id="email"><a href="Mailto:lastof@pm.me"><button class="contact">Email</button></a> <a target="_blank" href="https://github.com/Lastofthefirst"><button class="contact">Github</button></a> and 
+                        
+                        
+                        <button onclick="expand('embedIt', '0px', '380px');" class="contact">Resume</button> or <a target="_blank" href="https://github.com/Lastofthefirst/Lastofthefirst.github.io"><button class="contact">Source Code</button></a></h2>
                 </div>
             </div>
+            <div id="resumeFloatup"><embed id="embedIt" src="Resume.pdf" 
+                type="application/pdf"></div>
+
+
             <div id="grass"></div>
             <div class="panel" id="practical" onclick="openHouse('practical', '100px', '250px', 'roof', '356px','600px')">
                 <div class="card-container">
@@ -73,7 +80,7 @@
                         <a href="https://lastofthefirst.github.io/BookBox/" target="_blank"><img alt="An image of a printer representing the process of automated certificates" src="printer.jpg"></a>
                         <div class="applist">
                             <div class="appheader">
-                                <div class="listheading">Automated Certificate Generation and Sendout</div>
+                                <div class="listheading">Certificate Generator</div>
                                 <a target="_blank"><button class="codelink">Unavailable</button></a>
                             </div>
                             <div class="appinfo">I created a system of nodejs applications to send out certificates for Wilmette Institute Students. This includes a web scraper to find and identify canidates in the course websites, a pdf generator to create a certificate for each student found, a web scraper to compile student emails, and finally an email generator, sending the certificates to each student.
