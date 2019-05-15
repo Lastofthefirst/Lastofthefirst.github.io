@@ -16,6 +16,7 @@ body {
 
 .accordion:hover {
     box-shadow: -5px -5px 5px rgb(255, 255, 255);
+    -webkit-box-shadow: -5px -5px 5px rgb(255, 255, 255);
 }
 
 .panel {
@@ -180,6 +181,7 @@ button {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
     box-shadow: 0.5px 0.5px 1px rgba(105, 105, 105, 0.637);
+    -webkit-box-shadow:0.5px 0.5px 1px rgba(105, 105, 105, 0.637);
     font-size: 16px;
     display: absolute;
     right: 5px;
@@ -189,6 +191,7 @@ button {
     color: white;
     background-color: black;
     box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 p,
@@ -235,6 +238,7 @@ li {
     border: 2px solid rgb(139, 111, 78);
     border-radius: 5px;
     box-shadow: 0.5px 0.5px 1px rgba(105, 105, 105, 0.637);
+    -webkit-box-shadow:  0.5px 0.5px 1px rgba(105, 105, 105, 0.637);
     font-size: 16px;
     display: absolute;
     right: 5px;
@@ -254,6 +258,7 @@ img {
 
 img:hover {
     box-shadow: 1px 1.5px 2px rgba(141, 141, 141, 0.699);
+    -webkit-box-shadow:1px 1.5px 2px rgba(141, 141, 141, 0.699);
 }
 
 .cardInner {
@@ -266,6 +271,7 @@ img:hover {
     height: 190px;
     position: relative;
     box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
+    -webkit-box-shadow:1px 3px 5px rgba(105, 105, 105, 0.637);
     margin: 5px;
     margin-right: 3vw;
     margin-left: 2vw;
@@ -307,6 +313,7 @@ img:hover {
     position: relative;
     flex-direction: column;
     box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
+    -webkit-box-shadow:1px 3px 5px rgba(105, 105, 105, 0.637);
     margin: 5px;
     padding-left: 15px;
 }
@@ -322,6 +329,7 @@ img:hover {
     position: relative;
     flex-direction: column;
     box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
+    -webkit-box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
     margin: 5px;
     padding-left: 15px;
     margin-right: 20px;
@@ -751,7 +759,7 @@ img:hover {
     background-color: white;
     position: fixed;
     height: 70px;
-    width: 380px;
+    width: 480px;
     top: 50px;
     left: 20px;
     border-radius: 25px;
@@ -939,4 +947,18 @@ img:hover {
     left: 368px;
     height: 40px;
     color: white;
+}
+#resumeFloatup{
+    position:fixed;
+    top: 2000px;
+    transition: 0.8s;
+}
+#rope{
+    width: 10px;
+    height: 0px;
+    position: fixed;
+    left: 238px;
+    top: 112px;
+    background-color: black;
+    transition: 0.4s;
 }
