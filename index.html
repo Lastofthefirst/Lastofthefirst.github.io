@@ -185,7 +185,7 @@
         let change = document.getElementById(thisId).style;
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     // Take the user to a different screen here.
-            let hC = Number(thisNewHeight.replace('px', '')) + 400,
+            let hC = Number(thisNewHeight.replace('px', '')) + 350,
             heightOut = hC + 'px';
             change.height = change.height === heightOut ? thisHeight : heightOut;
         } else {
