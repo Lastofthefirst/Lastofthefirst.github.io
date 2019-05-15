@@ -192,9 +192,11 @@
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     // Take the user to a different screen here.
             let hC = Number(thisNewHeight.replace('px', '')) + 350,
-            thisNewHeight = hC + 'px';
-        }
+            heightOut = hC + 'px';
+            change.height = change.height === heightOut ? thisHeight : heightOut;
+        } else {
             change.height = change.height === thisNewHeight ? thisHeight : thisNewHeight;
+        }
     }
     function open(thisId, thisBottom, thisNewBottom) {
         let change = document.getElementById(thisId).style;
