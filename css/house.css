@@ -69,6 +69,7 @@ body {
     width: 100vw;
     transition: 0.4s;
     z-index: 2;
+    overflow: auto;
 }
 
 #skills {
@@ -204,6 +205,7 @@ li {
     flex-direction: row;
     padding-top: 10px;
     float: right;
+    flex-flow: row wrap;
 }
 
 .parag-container {
@@ -220,15 +222,7 @@ li {
     justify-content: center;
 }
 
-@media screen and (max-width: 1000px) {
-    .card-container {
-        flex-direction: column;
-    }
 
-    .parag-container {
-        flex-direction: column;
-    }
-}
 
 .codelink {
     -webkit-transition-duration: 0.2s;
@@ -269,6 +263,7 @@ img:hover {
     display: flex;
     flex-direction: row;
     height: 190px;
+    width: 40%;
     position: relative;
     box-shadow: 1px 3px 5px rgba(105, 105, 105, 0.637);
     -webkit-box-shadow:1px 3px 5px rgba(105, 105, 105, 0.637);
@@ -276,7 +271,18 @@ img:hover {
     margin-right: 3vw;
     margin-left: 2vw;
 }
+@media screen and (max-width: 1000px) {
+    .card-container {
+        flex-direction: column;
+    }
 
+    .parag-container {
+        flex-direction: column;
+    }
+    .cardInner{
+        width:90%;
+    }
+}
 .appheader {
     display: flex;
     direction: row;
@@ -950,9 +956,10 @@ img:hover {
 }
 #resumeFloatup{
     position:fixed;
-    top: 2000px;
+    top: 112px;
+    left: 238px;
     transition: 0.8s;
-    height: 510px;
+    height: 0px;
     border-radius: 5px;
     background-color:grey;
 }
