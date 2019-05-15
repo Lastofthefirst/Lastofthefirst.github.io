@@ -952,7 +952,9 @@ img:hover {
     position:fixed;
     top: 2000px;
     transition: 0.8s;
-    height: 380px;
+    height: 510px;
+    border-radius: 5px;
+    background-color:grey;
 }
 #rope{
     width: 10px;
@@ -962,4 +964,7 @@ img:hover {
     top: 112px;
     background-color: black;
     transition: 0.4s;
+}
+#pdf{
+    border-radius: 50px;
 }
